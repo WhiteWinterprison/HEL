@@ -356,7 +356,6 @@ GameObject:
   - component: {fileID: 6372019540910130182}
   - component: {fileID: 7946357110850510444}
   - component: {fileID: 8493555070729986086}
-  - component: {fileID: 4708702390887698941}
   m_Layer: 0
   m_Name: CAVEPlayer
   m_TagString: Untagged
@@ -454,18 +453,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 303b94eba458a4c4096e9563b137039c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4708702390887698941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7041242851400523957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6600f725e6858204b91595800b75dc11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7041242851702126656
