@@ -24,7 +24,7 @@ public class SetEventCamera : MonoBehaviour
         SetCameraToEventCamera();
     }
 
-    private void SetCameraToEventCamera()
+    public void SetCameraToEventCamera()
     {
         //check first if there might be multiple UIs
         if (PhotonNetwork.InRoom)

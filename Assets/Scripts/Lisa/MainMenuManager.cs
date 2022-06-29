@@ -141,7 +141,7 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("Start creation process...");
 
         //call the function from the Network Manager to create a new room
-        Li_NetworkManager.Instance.Interact_CreateNewRoom();
+        Singleton.Instance.GetComponent<NetworkManager>().CreateNewRoom();
     }
 
     //function provided for the join button

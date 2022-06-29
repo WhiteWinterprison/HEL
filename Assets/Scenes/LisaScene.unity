@@ -877,14 +877,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: vr
-      value: Vr
-      objectReference: {fileID: 0}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: cave
-      value: Cave
-      objectReference: {fileID: 0}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
       propertyPath: joinButton
       value: 
       objectReference: {fileID: 2119906261}
@@ -900,70 +892,6 @@ PrefabInstance:
       propertyPath: switchButton
       value: 
       objectReference: {fileID: 1095389684}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: connectToServer
-      value: Connect to Server
-      objectReference: {fileID: 0}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: connectedToServer
-      value: Connected
-      objectReference: {fileID: 0}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: roomNames.UseConstant
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: playerSetup.UseConstant
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: playerSetup.ConstantValue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 430589734950241164, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: connectionStatus.UseConstant
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: vr
-      value: vr
-      objectReference: {fileID: 0}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: cave
-      value: cave
-      objectReference: {fileID: 0}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1226863994}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: joinButton
-      value: 
-      objectReference: {fileID: 2119906261}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: createButton
-      value: 
-      objectReference: {fileID: 1055404370}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: serverButton
-      value: 
-      objectReference: {fileID: 309507699}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: switchButton
-      value: 
-      objectReference: {fileID: 1095389684}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: defaultCamera
-      value: normal
-      objectReference: {fileID: 0}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: connectToServer
-      value: connect
-      objectReference: {fileID: 0}
-    - target: {fileID: 6373970071321399523, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
-      propertyPath: connectedToServer
-      value: connected
-      objectReference: {fileID: 0}
     - target: {fileID: 6383370334692388509, guid: aac36e3b5c094184f9ccf374cf83a2c5, type: 3}
       propertyPath: m_Name
       value: MainMenuManager
@@ -1157,13 +1085,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: playerSetup.UseConstant
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: playerSetup.ConstantValue
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: onSetupChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1226863996}
     - target: {fileID: 5083107770733903969, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1212,30 +1136,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NetworkManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7954299443544542951, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: vrPoint
-      value: 
-      objectReference: {fileID: 992003116467592567, guid: 09b710bf9647c9946b2ca156f5f29905, type: 3}
-    - target: {fileID: 7954299443544542951, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: vrSetup
-      value: 
-      objectReference: {fileID: 2461695860002526806, guid: fa09fde0d78504d48b3e2d44a2934e74, type: 3}
-    - target: {fileID: 7954299443544542951, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: cavePoint
-      value: 
-      objectReference: {fileID: 590652653183597210, guid: e468c8c5d2e7d664091f9ea762b7e437, type: 3}
-    - target: {fileID: 7954299443544542951, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: caveSetup
-      value: 
-      objectReference: {fileID: 7041242851400523957, guid: 19139aecd00932145b0ec1c2f9d78069, type: 3}
-    - target: {fileID: 7954299443544542951, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: defaultPoint
-      value: 
-      objectReference: {fileID: 4413561112453563160, guid: ddb350d61d25c47419f0db8d292682f2, type: 3}
-    - target: {fileID: 7954299443544542951, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
-      propertyPath: defaultCamera
-      value: 
-      objectReference: {fileID: 2501980053481064635, guid: 5cfc63f172935e64c815f84057694b60, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
 --- !u!1 &914254667

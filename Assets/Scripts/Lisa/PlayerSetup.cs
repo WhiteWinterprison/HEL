@@ -23,6 +23,8 @@ public class PlayerSetup : MonoBehaviour
 
     public IntReference playerSetup;
 
+    public UnityEvent onSetupChanged;
+
     //the variables and refs for spawning the player
 
     [Header("The different Player Prefabs")]
@@ -59,6 +61,12 @@ public class PlayerSetup : MonoBehaviour
         else //or there are not that many displays
         {
             playerSetup.Variable.Value = 2; //its the VR setup
+        }
+
+        //make sure there is a Unity Event for onSetupChanged
+        if (onSetupChanged == null)
+        {
+            onSetupChanged = new UnityEvent();
         }
     }
 

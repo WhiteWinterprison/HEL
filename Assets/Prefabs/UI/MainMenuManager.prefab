@@ -45,23 +45,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSetup:
-    UseConstant: 1
-    ConstantValue: 0
+    UseConstant: 0
+    ConstantValue: 1
     Variable: {fileID: 11400000, guid: ddaa9040d0249204a9d80217c4d0e445, type: 2}
   connectionStatus:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: d5596cb3669f3a8468140cc2acb01c2d, type: 2}
   roomNames:
-    UseConstant: 1
+    UseConstant: 0
     ConstantContent: []
     Variable: {fileID: 11400000, guid: a244489d59e284845ac73c5570989ab1, type: 2}
   serverButton: {fileID: 0}
-  connectToServer: 
-  connectedToServer: 
+  connectToServer: Connect to Server
+  connectedToServer: Connected
   switchButton: {fileID: 0}
-  cave: 
-  vr: 
+  cave: Cave
+  vr: Vr
   joinButton: {fileID: 0}
   noRoom: 
   createButton: {fileID: 0}

@@ -101,8 +101,8 @@ public class CaveState : SetupStates
 
     public override void Enter()
     {
-        //Li_NetworkManager.Instance.GetComponent<Li_PlayerSetup>().onSetupChanged.Invoke(); //destroy the current player, change the player variables and spawn the new player
-        Li_NetworkManager.Instance.GetComponent<PlayerSetup>().SpawnMyPlayer(); //spawn the new player
+        Singleton.Instance.GetComponent<PlayerSetup>().SpawnMyPlayer(); //spawn the new player
+        Singleton.Instance.GetComponent<PlayerSetup>().onSetupChanged.Invoke(); //inform all listeners about the change
         Debug.Log("entered CAVE");
         base.Enter();
     }
@@ -113,10 +113,10 @@ public class CaveState : SetupStates
 
         //go from this state to the vr state
 
-        if (Li_NetworkManager.Instance.GetComponent<PlayerSetup>().playerSetup.Value == 2)
+        if (Singleton.Instance.GetComponent<PlayerSetup>().playerSetup.Value == 2)
         {
             nextState = new VrState(cavePrefab, vrPrefab, defaultSpawn, caveSpawn, vrSpawn); //the next state is the vr state
-            Li_NetworkManager.Instance.GetComponent<PlayerSetup>().DestroyMyPlayer(); //destroy the current player
+            Singleton.Instance.GetComponent<PlayerSetup>().DestroyMyPlayer(); //destroy the current player
             stage = EVENT.EXIT; //leave this state
         }
     }
@@ -139,8 +139,8 @@ public class VrState : SetupStates
 
     public override void Enter()
     {
-        //Li_NetworkManager.Instance.GetComponent<Li_PlayerSetup>().onSetupChanged.Invoke(); //destroy the current player, change the player variables and spawn the new player
-        Li_NetworkManager.Instance.GetComponent<PlayerSetup>().SpawnMyPlayer(); //spawn the new player
+        Singleton.Instance.GetComponent<PlayerSetup>().SpawnMyPlayer(); //spawn the new player
+        Singleton.Instance.GetComponent<PlayerSetup>().onSetupChanged.Invoke(); //inform all listeners about the change
         Debug.Log("entered VR");
         base.Enter();
     }
@@ -151,10 +151,10 @@ public class VrState : SetupStates
 
         //go from this state to the cave state
 
-        if (Li_NetworkManager.Instance.GetComponent<PlayerSetup>().playerSetup.Value == 1)
+        if (Singleton.Instance.GetComponent<PlayerSetup>().playerSetup.Value == 1)
         {
             nextState = new CaveState(cavePrefab, vrPrefab, defaultSpawn, caveSpawn, vrSpawn); //the next state is the cave state
-            Li_NetworkManager.Instance.GetComponent<PlayerSetup>().DestroyMyPlayer(); //destroy the current player
+            Singleton.Instance.GetComponent<PlayerSetup>().DestroyMyPlayer(); //destroy the current player
             stage = EVENT.EXIT; //leave this state
         }
     }

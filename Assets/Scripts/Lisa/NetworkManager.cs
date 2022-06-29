@@ -4,15 +4,7 @@
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 
-//Script: Handling the Multiplayer Setup with Photon
-
-
-//What it do:
-// - create the singleton instance
-// - provide a function to connect to the server
-// - join the lobby if connected to the server
-// - provide a function to create a room
-// - create and join a room if creating and joining before failed
+//Script: Handling the Multiplayer Setup
 
 
 using System.Collections;
@@ -23,52 +15,33 @@ using Photon.Pun;
 using Photon.Realtime;
 
 //deriving from MonoBehaviour Callbacks instead of MonoBehaviour for more PUN specific functionality
-public class Li_NetworkManager : MonoBehaviourPunCallbacks
+public class NetworkManager : MonoBehaviourPunCallbacks
 {
-     #region Variables
+    #region Variables
 
-    public List<string> roomNames;
+    public ListReference roomNames;
+    public BoolReference connectionStatus;
 
     [Header("How many Players are allowed inside of a Room")]
-    [SerializeField]
-    private byte playerCount = 2;
+    public ByteReference playerCount;
 
     [Header("Which Scene to load when Creating a Room")]
-    [SerializeField]
-    private byte sceneIndex = 1;
+    public ByteReference lobbyIndex;
 
     [Header("Which Scene to load when goind back to the Entrance Scene")]
-    [SerializeField]
-    private byte entranceIndex = 0;
+    public ByteReference roomIndex;
 
     #endregion
-
-    #region Singleton Pattern
-
-    public static Li_NetworkManager Instance { set; get; }
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(Instance);
-        }
-        else Destroy(this.gameObject);
+        //make sure that the value shows disconnected when starting the game
+        if (connectionStatus.Value) connectionStatus.Variable.Value = false;
     }
 
-    #endregion
+    #region Connecting to the Server
 
-    #region Connection to Server
-
-    //function to call in the function provided for the server button
-    public void Interact_StartConnectionToServer()
-    {
-        Debug.Log("Try to connect to server...");
-
-        //use default setting to connect to server (settings defined in 'Photon Server Settings')
-        PhotonNetwork.ConnectUsingSettings();
-    }
+    //function ConnectToServer() on MainMenuManager
 
     //triggered when user is connected to server
     public override void OnConnectedToMaster()
@@ -88,27 +61,23 @@ public class Li_NetworkManager : MonoBehaviourPunCallbacks
         //base.OnJoinedLobby();
 
         Debug.Log("...Ready to join multiplayer");
+        connectionStatus.Variable.Value = true;
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        base.OnDisconnected(cause);
+        connectionStatus.Variable.Value = false;
     }
 
     #endregion
 
-    #region Getting into a Room
+    #region Getting into a Room Room
 
-    //function to call in the function provided for the create room button
-    public void Interact_CreateNewRoom()
-    {
-        CreateNewRoom();
-    }
-
-    public void Interact_JoinRoom(string roomName)
-    {
-        Debug.Log("Trying to join " + roomName + "...");
-        
-        PhotonNetwork.JoinRoom(roomName);
-    }
+    //function CreateRoom() on MainMenuManager
 
     //create a new room and join as the first player
-    private void CreateNewRoom()
+    public void CreateNewRoom()
     {
         //--------------------//
         //Set the room options//
@@ -121,7 +90,7 @@ public class Li_NetworkManager : MonoBehaviourPunCallbacks
         {
             IsVisible = true,
             IsOpen = true,
-            MaxPlayers = playerCount,
+            MaxPlayers = playerCount.Value,
             PublishUserId = true //other players can see UID
         };
 
@@ -140,7 +109,7 @@ public class Li_NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("...Joined room and load scene...");
 
         //load scene, check build settings for index
-        PhotonNetwork.LoadLevel(sceneIndex);
+        PhotonNetwork.LoadLevel(roomIndex.Value);
     }
 
     //triggered when user failed to join a room
@@ -158,7 +127,7 @@ public class Li_NetworkManager : MonoBehaviourPunCallbacks
     {
         foreach (RoomInfo room in roomList)
         {
-            roomNames.Add(room.Name);
+            roomNames.Content.Add(room.Name);
         }
     }
 
@@ -166,14 +135,9 @@ public class Li_NetworkManager : MonoBehaviourPunCallbacks
 
     #region Leave a room
 
-    //function to call in the function provided for the leave room button
-    public void Interact_BackToMenu()
-    {
-        Debug.Log("Trying to leave room...");
+    //function BackToMenu() on UIManager
 
-        PhotonNetwork.LeaveRoom();
-    }
-
+    //triggered when room has been left
     public override void OnLeftRoom()
     {
         Debug.Log("Left room and load scene...");
@@ -182,23 +146,7 @@ public class Li_NetworkManager : MonoBehaviourPunCallbacks
 
         //load scene 0
         //instead of the PHOTON scene handling we use the unity scene manager since we do not need to syncronize the scene load for all users
-        SceneManager.LoadScene(entranceIndex); //index must fit the build settings
-    }
-
-    #endregion
-
-    #region Handing over Variables
-
-    //function to update another script about the connection status to the server
-    public bool GetConnectionStatus()
-    {
-        return PhotonNetwork.IsConnected;
-    }
-
-    //function to hand over the specific name of a room inside the rooms list
-    public string GetRoomName(int index)
-    {
-        return roomNames[index];
+        SceneManager.LoadScene(lobbyIndex.Value); //index must fit the build settings
     }
 
     #endregion
