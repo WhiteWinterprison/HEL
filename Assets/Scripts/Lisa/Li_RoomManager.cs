@@ -59,7 +59,7 @@ public class Li_RoomManager : MonoBehaviourPunCallbacks
     private void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
         //reload the player setup to spawn the player prefab correctly
-        Li_NetworkManager.Instance.GetComponent<Li_PlayerSetup>().SpawnMyPlayer();
+        Li_NetworkManager.Instance.GetComponent<PlayerSetup>().SpawnMyPlayer();
     }
 
     #endregion

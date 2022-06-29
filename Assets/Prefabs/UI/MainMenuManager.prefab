@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6383370334692388511}
-  - component: {fileID: 6373970071321399523}
+  - component: {fileID: 430589734950241164}
   m_Layer: 0
   m_Name: MainMenuManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6373970071321399523
+--- !u!114 &430589734950241164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,17 +41,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 6383370334692388509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94dc07f59980ce6428bef2d0621729ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 563f26c5f06e293429864f1755076233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  playerSetup:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: ddaa9040d0249204a9d80217c4d0e445, type: 2}
+  connectionStatus:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: d5596cb3669f3a8468140cc2acb01c2d, type: 2}
+  roomNames:
+    UseConstant: 1
+    ConstantContent: []
+    Variable: {fileID: 11400000, guid: a244489d59e284845ac73c5570989ab1, type: 2}
   serverButton: {fileID: 0}
   connectToServer: 
   connectedToServer: 
-  joinButton: {fileID: 0}
-  noRoom: 
-  createButton: {fileID: 0}
   switchButton: {fileID: 0}
   cave: 
   vr: 
-  defaultCamera: 
+  joinButton: {fileID: 0}
+  noRoom: 
+  createButton: {fileID: 0}

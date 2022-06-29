@@ -25,7 +25,7 @@ using Photon.Realtime;
 //deriving from MonoBehaviour Callbacks instead of MonoBehaviour for more PUN specific functionality
 public class Li_NetworkManager : MonoBehaviourPunCallbacks
 {
-    #region Variables
+     #region Variables
 
     public List<string> roomNames;
 

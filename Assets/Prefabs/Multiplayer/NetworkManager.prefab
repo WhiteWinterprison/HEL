@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5083107770733903969}
   - component: {fileID: 931392242841317150}
-  - component: {fileID: 7954299443544542951}
+  - component: {fileID: 3820746563214461840}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -49,7 +49,7 @@ MonoBehaviour:
   playerCount: 2
   sceneIndex: 1
   entranceIndex: 0
---- !u!114 &7954299443544542951
+--- !u!114 &3820746563214461840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,14 +58,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 5083107770733903971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5a8474259d4a50448e92d3eadea3e65, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e11cfe6b1d48b44ea974d45847e29c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultCamera: {fileID: 0}
-  caveSetup: {fileID: 0}
-  vrSetup: {fileID: 0}
-  myPrefab: {fileID: 0}
-  defaultPoint: {fileID: 0}
-  cavePoint: {fileID: 0}
-  vrPoint: {fileID: 0}
+  playerSetup:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: ddaa9040d0249204a9d80217c4d0e445, type: 2}
+  caveSetup: {fileID: 7041242851400523957, guid: 19139aecd00932145b0ec1c2f9d78069, type: 3}
+  vrSetup: {fileID: 2461695860002526806, guid: fa09fde0d78504d48b3e2d44a2934e74, type: 3}
+  defaultPoint:
+    UseConstant: 1
+    ConstantValue: {x: 0, y: 0, z: 0}
+    Variable: {fileID: 11400000, guid: ba7facf9e7e7f0e4ea0466bdd0954c13, type: 2}
+  cavePoint:
+    UseConstant: 1
+    ConstantValue: {x: 0, y: 0, z: 0}
+    Variable: {fileID: 11400000, guid: 98921d043ed54b240a2cf110aec0c9b3, type: 2}
+  vrPoint:
+    UseConstant: 1
+    ConstantValue: {x: 0, y: 0, z: 0}
+    Variable: {fileID: 11400000, guid: dc10f2921d2cb6d4e81712def7b6211b, type: 2}
   displayCount: 6

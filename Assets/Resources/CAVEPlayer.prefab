@@ -353,12 +353,12 @@ GameObject:
   - component: {fileID: 7041242851400523959}
   - component: {fileID: 7041242851400523958}
   - component: {fileID: 2190669486932555872}
-  - component: {fileID: 6372019540910130182}
-  - component: {fileID: 7946357110850510444}
-  - component: {fileID: 8493555070729986086}
+  - component: {fileID: 4269059122166815839}
+  - component: {fileID: 1171203637912793768}
+  - component: {fileID: 2981243056477159974}
   m_Layer: 0
   m_Name: CAVEPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &6372019540910130182
+--- !u!114 &4269059122166815839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,10 +428,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7041242851400523957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce939ef2202cf4748b45a95777549107, type: 3}
+  m_Script: {fileID: 11500000, guid: 710bee1e49981614a82ebffa4e36a780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7946357110850510444
+--- !u!114 &1171203637912793768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,10 +440,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7041242851400523957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac5dfbcaf9f4314469415e8b7774d792, type: 3}
+  m_Script: {fileID: 11500000, guid: 5648ff171c98f8a42a2de28f1a4895bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8493555070729986086
+--- !u!114 &2981243056477159974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7041242851400523957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303b94eba458a4c4096e9563b137039c, type: 3}
+  m_Script: {fileID: 11500000, guid: 573faf432ccb6e1499f77f01ea71156c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7041242851702126656

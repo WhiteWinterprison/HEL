@@ -150,9 +150,10 @@ GameObject:
   - component: {fileID: 382111257876377905}
   - component: {fileID: 382111257876377910}
   - component: {fileID: 382111257876377911}
+  - component: {fileID: 5833292450858736961}
   m_Layer: 5
   m_Name: UIPreset
-  m_TagString: Untagged
+  m_TagString: Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,6 +260,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!114 &5833292450858736961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382111257876377908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b80aa426344c64a832dd38fcce8457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &382111257942226799
 GameObject:
   m_ObjectHideFlags: 0
