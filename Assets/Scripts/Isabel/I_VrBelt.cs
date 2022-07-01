@@ -73,10 +73,9 @@ public class I_VrBelt : MonoBehaviour
 
         // GameObject BuildingClone = Instantiate(BuildingToSpawn, B_position, B_rotation);
         // Debug.LogWarning (BuildingClone);
-        string BuildingName = BuildingToSpawn.ToString();
-
+       
         //PhotonNetwork.Instantiate(BuildingName, B_position, Quaternion.identity, 0);
-        PhotonNetwork.Instantiate("1_coal_powerplant", B_position, Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(BuildingToSpawn.name , B_position, Quaternion.identity, 0);
         IsAllowedToSapwn = false;
 
     }
