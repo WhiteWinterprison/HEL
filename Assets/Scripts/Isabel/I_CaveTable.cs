@@ -48,31 +48,31 @@ public class I_CaveTable : MonoBehaviour
         if(i_socketCollision.BuildingName == "Building1")
         {
             BuildingNr.Value = 0;
-            Debug.Log("Building Nr:" + BuildingNr.Value);
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
         else if(i_socketCollision.BuildingName == "Building2")
         {
             BuildingNr.Value = 1;
-            Debug.Log("Building Nr:" + BuildingNr.Value);
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
         else if(i_socketCollision.BuildingName == "Building3")
         {
             BuildingNr.Value = 2;
-            Debug.Log("Building Nr:" + BuildingNr.Value);
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
           else if(i_socketCollision.BuildingName == "Building4")
         {
             BuildingNr.Value = 3;
-            Debug.Log("Building Nr:" + BuildingNr.Value);
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
           else if(i_socketCollision.BuildingName == "Building5")
         {
             BuildingNr.Value = 4;
-            Debug.Log("Building Nr:" + BuildingNr.Value);
+           //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
         else
