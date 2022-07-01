@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Panel
   - Ground
+  - Socket
   layers:
   - Default
   - TransparentFX
