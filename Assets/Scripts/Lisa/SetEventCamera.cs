@@ -37,6 +37,7 @@ public class SetEventCamera : MonoBehaviour
                     foreach (Canvas canvas in obj.GetComponentsInChildren<Canvas>())
                     {
                         canvas.worldCamera = this.GetComponentInChildren<Camera>();
+                        Debug.Log("camera is now world camera");
                     }
                 }
             }
@@ -49,6 +50,7 @@ public class SetEventCamera : MonoBehaviour
                 foreach (Canvas canvas in obj.GetComponentsInChildren<Canvas>())
                 {
                     canvas.worldCamera = this.GetComponent<Camera>();
+                    Debug.Log("camera is now world camera");
                 }
             }
         }
