@@ -96,19 +96,7 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: ddaa9040d0249204a9d80217c4d0e445, type: 2}
   onSetupChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SetEventCamera, Assembly-CSharp
-        m_MethodName: SetCameraToEventCamera
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   caveSetup: {fileID: 7041242851400523957, guid: 19139aecd00932145b0ec1c2f9d78069, type: 3}
   vrSetup: {fileID: 2461695860002526806, guid: fa09fde0d78504d48b3e2d44a2934e74, type: 3}
   defaultPoint:
