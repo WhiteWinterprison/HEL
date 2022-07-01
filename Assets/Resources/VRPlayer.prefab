@@ -266,7 +266,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2461695861810511478}
-  - {fileID: 308707262580944587}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -491,6 +490,7 @@ Transform:
   - {fileID: 2461695859961994849}
   - {fileID: 2461695861834685087}
   - {fileID: 2461695861861960215}
+  - {fileID: 308707262580944587}
   m_Father: {fileID: 2461695860002526804}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -923,37 +923,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.02
+  m_LineWidth: 0.0395
   m_OverrideInteractorLineLength: 1
   m_LineLength: 10
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
+      time: 0.0041656494
+      value: 1.0037842
+      inSlope: -0.8226952
+      outSlope: -0.8226952
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 1
+      time: 1.0083313
+      value: 0.1776619
+      inSlope: -0.8226952
+      outSlope: -0.8226952
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 0.24447727, g: 0, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 0.8117647}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -982,7 +982,7 @@ MonoBehaviour:
   m_InvalidColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 0}
+    key1: {r: 1, g: 1, b: 1, a: 0.9137255}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1447,6 +1447,8 @@ GameObject:
   - component: {fileID: 3001989443226814646}
   - component: {fileID: 1114316412286499702}
   - component: {fileID: 1516914190384242465}
+  - component: {fileID: 440669709253012686}
+  - component: {fileID: 3077529756800652887}
   m_Layer: 0
   m_Name: Belt
   m_TagString: VRBelt
@@ -1461,8 +1463,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6256735150507256106}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1, z: 1.105}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.577, z: 1.105}
   m_LocalScale: {x: 2.739718, y: 0.0776843, z: 0.42696}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1471,8 +1473,8 @@ Transform:
   - {fileID: 475354188455651318}
   - {fileID: 5523411609658482958}
   - {fileID: 1448421080869788383}
-  m_Father: {fileID: 2461695860002526804}
-  m_RootOrder: 1
+  m_Father: {fileID: 2461695861810511478}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5801224178272879524
 MeshFilter:
@@ -1549,11 +1551,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9fc31378ec7bc4e994760570d09e85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrSockets:
-  - {fileID: 0}
-  - {fileID: 6881634267725611869}
-  - {fileID: 7648424560189942098}
+  vrSockets: []
   BuildingNr: {fileID: 11400000, guid: 89001213ad8cc4a45982795c64da9086, type: 2}
+--- !u!114 &440669709253012686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256735150507256106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &3077529756800652887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256735150507256106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 440669709253012686}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &6881634267725611869
 GameObject:
   m_ObjectHideFlags: 0
