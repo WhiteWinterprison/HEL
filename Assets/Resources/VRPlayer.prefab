@@ -1349,7 +1349,7 @@ GameObject:
   - component: {fileID: 6704860045440634916}
   - component: {fileID: 4398349682944596219}
   m_Layer: 0
-  m_Name: Socket Interactor (3)
+  m_Name: VRSocket  (3)
   m_TagString: VRSocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1566,7 +1566,7 @@ GameObject:
   - component: {fileID: 4388310422805786622}
   - component: {fileID: 3271327115475529894}
   m_Layer: 0
-  m_Name: Socket Interactor (1)
+  m_Name: VRSocket  (1)
   m_TagString: VRSocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1663,7 +1663,7 @@ GameObject:
   - component: {fileID: 2822934781235629492}
   - component: {fileID: 1864887129169296949}
   m_Layer: 0
-  m_Name: Socket Interactor (2)
+  m_Name: VRSocket  (2)
   m_TagString: VRSocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1760,7 +1760,7 @@ GameObject:
   - component: {fileID: 581059072873250763}
   - component: {fileID: 305984800463776790}
   m_Layer: 0
-  m_Name: Socket Interactor (4)
+  m_Name: VRSocket  (4)
   m_TagString: VRSocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1857,7 +1857,7 @@ GameObject:
   - component: {fileID: 2446230410491867833}
   - component: {fileID: 6555273217835602784}
   m_Layer: 0
-  m_Name: Socket Interactor (5)
+  m_Name: VRSocket  (5)
   m_TagString: VRSocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
