@@ -6,6 +6,15 @@ TagManager:
   tags:
   - Panel
   - Ground
+  - CaveTable
+  - Building2
+  - CaveSocket
+  - VRSocket
+  - VRBelt
+  - Building1
+  - Building3
+  - Building4
+  - Building5
   layers:
   - Default
   - TransparentFX
