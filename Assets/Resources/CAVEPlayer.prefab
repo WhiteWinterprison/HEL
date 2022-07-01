@@ -352,10 +352,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7041242851400523959}
   - component: {fileID: 7041242851400523958}
-  - component: {fileID: 2190669486932555872}
   - component: {fileID: 4269059122166815839}
   - component: {fileID: 1171203637912793768}
   - component: {fileID: 2981243056477159974}
+  - component: {fileID: 2190669486932555872}
+  - component: {fileID: 9002331403776820143}
   m_Layer: 0
   m_Name: CAVEPlayer
   m_TagString: Player
@@ -394,31 +395,6 @@ MonoBehaviour:
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   - {fileID: -944628639613478452, guid: f49aef9978f3cea4ab15e278df54f1e9, type: 3}
---- !u!114 &2190669486932555872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7041242851400523957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 6164538807208093690}
-  - {fileID: 4131748666223475702}
-  - {fileID: 4789022506865293946}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &4269059122166815839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,6 +431,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573faf432ccb6e1499f77f01ea71156c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2190669486932555872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7041242851400523957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 9002331403776820143}
+  - {fileID: 6164538807208093690}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &9002331403776820143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7041242851400523957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &7041242851702126656
 GameObject:
   m_ObjectHideFlags: 0
