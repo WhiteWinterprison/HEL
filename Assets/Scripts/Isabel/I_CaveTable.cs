@@ -40,26 +40,39 @@ public class I_CaveTable : MonoBehaviour
     }
     
     //Which building is in the teleporter ?
-    public  void GetBuildingInTeleporter()
+    public  void GetBuildingInTeleporter() //get called in the Enter hover even on Teleporter !!!
     {
 
-        Debug.Log(i_socketCollision.BuildingName);
+        Debug.Log(i_socketCollision.BuildingName, this.gameObject);
+
         if(i_socketCollision.BuildingName == "Building1")
         {
             BuildingNr.Value = 0;
-            //Debug.Log("Building Nr:" + BuildingNr.value);
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
         else if(i_socketCollision.BuildingName == "Building2")
         {
             BuildingNr.Value = 1;
-            //Debug.Log("Building Nr:" + BuildingNr.value);
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
         else if(i_socketCollision.BuildingName == "Building3")
         {
             BuildingNr.Value = 2;
-            //Debug.Log("Building Nr:" + BuildingNr.value);
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
+            BuildingWasTouched();
+        }
+          else if(i_socketCollision.BuildingName == "Building4")
+        {
+            BuildingNr.Value = 3;
+            //Debug.Log("Building Nr:" + BuildingNr.Value);
+            BuildingWasTouched();
+        }
+          else if(i_socketCollision.BuildingName == "Building5")
+        {
+            BuildingNr.Value = 4;
+           //Debug.Log("Building Nr:" + BuildingNr.Value);
             BuildingWasTouched();
         }
         else

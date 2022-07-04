@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Building1
+  - Building2
+  - Building3
+  - Building4
+  - Building5
   - 
   - 
   - 

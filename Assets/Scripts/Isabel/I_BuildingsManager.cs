@@ -87,20 +87,20 @@ public class I_BuildingsManager : MonoBehaviour
         if(canBePlaced == true)
         {
             OnBuilding_placable?.Invoke(); //If the event exist do it
-            //Debug.Log("BuildingManager: Place It");
+           // Debug.Log("BuildingManager: Place It");
         }
 
         if(CanBeGiven == true)
         {
             OnBuilding_givable?.Invoke();
-            //Debug.Log("BuildinManager: Given");
+           // Debug.Log("BuildinManager: Given");
         }
    }
 
    public void spawnBuilding()
    {    
         string interactable = Teleporter.GetComponent<XRSocketInteractor>().attachTransform.ToString();
-        Debug.Log(interactable);
+        //Debug.Log(interactable);
    }
 
 
@@ -115,7 +115,7 @@ public class I_BuildingsManager : MonoBehaviour
             {
                 //set BuildingToInstantiate to the right buildign nr  
                 BuildingToInstantiate = Buildings[i]; 
-                //Debug.Log("Building"+ BuildingNr.value +" is Ready for VR use");
+                //Debug.Log("Building"+ BuildingNr.Value +" is Ready for VR use");
                 //Debug.LogWarning("Manager Chosen Building" + Buildings[i]+ "for Vr user");
                 
                 canBePlaced = true;

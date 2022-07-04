@@ -4,6 +4,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class I_VrBelt : MonoBehaviour
 {
@@ -69,7 +71,11 @@ public class I_VrBelt : MonoBehaviour
             //Debug.Log("VR Belt Holds the model"+BuildingToSpawn);
         }
 
-        GameObject BuildingClone = Instantiate(BuildingToSpawn, B_position, B_rotation);
+        // GameObject BuildingClone = Instantiate(BuildingToSpawn, B_position, B_rotation);
+        // Debug.LogWarning (BuildingClone);
+       
+        //PhotonNetwork.Instantiate(BuildingName, B_position, Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(BuildingToSpawn.name , B_position, Quaternion.identity, 0);
         IsAllowedToSapwn = false;
 
     }
