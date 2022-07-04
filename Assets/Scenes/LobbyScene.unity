@@ -1324,6 +1324,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
+      propertyPath: caveSetup
+      value: 
+      objectReference: {fileID: 7041242851400523957, guid: 765d85c630924344e94fc403ca611029, type: 3}
+    - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
       propertyPath: vrPoint.UseConstant
       value: 0
       objectReference: {fileID: 0}
