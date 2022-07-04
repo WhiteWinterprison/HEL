@@ -16,6 +16,6 @@ public class StringReference
 
     public string Value
     {
-        get { return UseConstant ? ConstantLetters : Variable.Letters; }
+        get { return UseConstant ? ConstantLetters : Variable.Value; }
     }
 }

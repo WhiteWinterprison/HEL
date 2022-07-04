@@ -9,5 +9,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Variable/String")]
 public class StringObject : ScriptableObject
 {
-    public string Letters;
+    public string Value;
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7732067170453561140
+--- !u!1 &2990852062217628354
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7732067170453561141}
-  - component: {fileID: 623399232895113890}
-  - component: {fileID: 77067268}
+  - component: {fileID: 2990852062217628355}
+  - component: {fileID: 3586523265864826191}
   m_Layer: 0
-  m_Name: RoomManager
+  m_Name: RoomMenuManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7732067170453561141
+--- !u!4 &2990852062217628355
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732067170453561140}
+  m_GameObject: {fileID: 2990852062217628354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,39 +32,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &623399232895113890
+--- !u!114 &3586523265864826191
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732067170453561140}
+  m_GameObject: {fileID: 2990852062217628354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342ac7d29c9c44c40b2af30f412b079c, type: 3}
+  m_Script: {fileID: 11500000, guid: d128098669025f548ba940d803d8122b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &77067268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732067170453561140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec04d34cfc1a5ea46a02bb7e6b10d703, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onModeChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  playModes: {fileID: 77067268}
+  playerSetup:
+    UseConstant: 0
+    ConstantValue: 1
+    Variable: {fileID: 11400000, guid: ddaa9040d0249204a9d80217c4d0e445, type: 2}
   modeText:
     UseConstant: 0
     ConstantLetters: Build Mode
     Variable: {fileID: 11400000, guid: cb885407a77099343a20c4088b6997ff, type: 2}
-  playMode:
-    UseConstant: 0
-    ConstantValue: 1
-    Variable: {fileID: 11400000, guid: 729a5d8d3c084cc4395099e730884110, type: 2}
+  caveModeText: {fileID: 0}
+  vrModeText: {fileID: 0}
+  caveUI: {fileID: 0}
+  vrUI: {fileID: 0}
