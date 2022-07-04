@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/LisaScene.unity
+    guid: 9faa359ae614f114fadaab60fb5e855e
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerScene.unity
+    guid: ee1ec574015d8d94fb3b7ff5f0cafa32
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 822daaf1a56c5c24f8794926d8f97b14, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f949bd50f35988f4fa2b245186b24f00, type: 2}
