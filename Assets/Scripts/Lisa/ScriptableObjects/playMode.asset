@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5c5ccf6cf15d948905ab7245a9272b, type: 3}
   m_Name: playMode
   m_EditorClassIdentifier: 
-  Value: 0
+  Value: 1

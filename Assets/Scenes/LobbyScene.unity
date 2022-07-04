@@ -1324,6 +1324,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
+      propertyPath: vrPoint.UseConstant
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
+      propertyPath: cavePoint.UseConstant
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
+      propertyPath: defaultPoint.UseConstant
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820746563214461840, guid: d52983627fee64649a29850bcd6c7c69, type: 3}
       propertyPath: onSetupChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 610418318}
