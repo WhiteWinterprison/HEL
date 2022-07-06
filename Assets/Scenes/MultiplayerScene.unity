@@ -479,6 +479,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2400747080935897599, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 77067267}
+    - target: {fileID: 2400747080935897599, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchModes
+      objectReference: {fileID: 0}
     - target: {fileID: 2400747081413804579, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -566,6 +574,22 @@ PrefabInstance:
     - target: {fileID: 2400747081413804590, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
       propertyPath: m_Name
       value: CAVEUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400747081736613005, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1182594986}
+    - target: {fileID: 2400747081736613005, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeaveRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400747082504719707, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1182594986}
+    - target: {fileID: 2400747082504719707, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeSetup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15090242eb2bbc144a2d883076b9e13b, type: 3}

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5693e51c10e2c44833a72c619a6101, type: 3}
   m_Name: modeText
   m_EditorClassIdentifier: 
-  Letters: Build Mode
+  Value: Build Mode
