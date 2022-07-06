@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6386525497692407036}
   - component: {fileID: 6386525497692502787}
   - component: {fileID: 7910431980437355107}
+  - component: {fileID: 871344058218694120}
   - component: {fileID: 3891948528793606050}
   m_Layer: 0
   m_Name: 2_electricline
@@ -253,6 +254,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 7910431980437355107}
+  - {fileID: 871344058218694120}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -272,6 +274,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &871344058218694120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225308873179075040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &3891948528793606050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,5 +303,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Materials:
-  - {fileID: 2100000, guid: 4382b959b0b55b342b20ab3a3e02e884, type: 2}
   - {fileID: 2100000, guid: 3d626451096b564489e37fa086c1d698, type: 2}
+  - {fileID: 2100000, guid: 4382b959b0b55b342b20ab3a3e02e884, type: 2}

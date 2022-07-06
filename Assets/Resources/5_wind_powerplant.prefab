@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9083863281500632580}
   - component: {fileID: 9083863281500632583}
   - component: {fileID: 6982915769467265515}
+  - component: {fileID: 48083814911851236}
   - component: {fileID: 5390148826818063265}
   m_Layer: 0
   m_Name: 5_wind_powerplant
@@ -253,6 +254,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 6982915769467265515}
+  - {fileID: 48083814911851236}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -272,6 +274,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &48083814911851236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282498677617235934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &5390148826818063265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,5 +303,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Materials:
-  - {fileID: 2100000, guid: 4382b959b0b55b342b20ab3a3e02e884, type: 2}
   - {fileID: 2100000, guid: 3d626451096b564489e37fa086c1d698, type: 2}
+  - {fileID: 2100000, guid: 4382b959b0b55b342b20ab3a3e02e884, type: 2}

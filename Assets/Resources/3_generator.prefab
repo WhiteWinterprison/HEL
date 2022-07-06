@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4213091354668007490}
   - component: {fileID: 4213091354668007489}
   - component: {fileID: 8726850251753999544}
+  - component: {fileID: 6465330859371242842}
   - component: {fileID: 8823668984728718201}
   m_Layer: 0
   m_Name: 3_generator
@@ -253,6 +254,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 8726850251753999544}
+  - {fileID: 6465330859371242842}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -272,6 +274,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &6465330859371242842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2411418338378785168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &8823668984728718201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,5 +303,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Materials:
-  - {fileID: 2100000, guid: 4382b959b0b55b342b20ab3a3e02e884, type: 2}
   - {fileID: 2100000, guid: 3d626451096b564489e37fa086c1d698, type: 2}
+  - {fileID: 2100000, guid: 4382b959b0b55b342b20ab3a3e02e884, type: 2}
