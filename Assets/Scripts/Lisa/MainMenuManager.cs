@@ -7,6 +7,13 @@
 //Script: Handling the Main Menu behaviour and providing functions for its UI elements
 
 
+//What it do:
+// - store the relevant variables for updating the UI inside the lobby room
+// - set the starting state of the UI
+// - update the UI every time the player setup changes
+// - provide functions for the buttons of the UI
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

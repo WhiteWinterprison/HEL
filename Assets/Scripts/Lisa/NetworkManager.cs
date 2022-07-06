@@ -7,6 +7,12 @@
 //Script: Handling the Multiplayer Setup
 
 
+//What it do:
+// - provides the functions and Callbacks for connecting to the server
+// - provides the functions and Callbacks for getting into a room
+// - provides the Callback for leaving the room
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -135,7 +141,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     #region Leave a room
 
-    //function BackToMenu() on UIManager
+    //function LeaveRoom() on RoomMenuManager
 
     //triggered when room has been left
     public override void OnLeftRoom()

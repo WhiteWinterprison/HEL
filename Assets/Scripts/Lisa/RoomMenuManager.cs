@@ -7,6 +7,14 @@
 //Script: Handling the Room UI behaviour and providing functions for its UI elements
 
 
+//What it do:
+// - store the relevant variables for updating the UI inside the multiplayer room
+// - set the starting state of the UI
+// - update the UI every time the player setup changes
+// - provide functions for the buttons of the UI
+// - provide functions for new states (mode change and player setup change)
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,7 +47,11 @@ public class RoomMenuManager : MonoBehaviour
 
     private void Awake()
     {
+        //set the UI to the starting state
         UpdateUISetup();
+
+        //add the UI setup function to the event onSetupChanged
+        Singleton.Instance.GetComponent<PlayerSetup>().onSetupChanged.AddListener(UpdateUISetup);
     }
 
     #region Provided Functions

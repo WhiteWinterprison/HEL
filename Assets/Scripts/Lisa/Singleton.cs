@@ -7,6 +7,10 @@
 //Script: Providing a Singleton Pattern for the Network Manager GameObject
 
 
+//What it do:
+// - provide a singleton pattern for a singleton object so we can easily see which object is a singleton in our scenes
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

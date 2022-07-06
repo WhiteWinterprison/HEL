@@ -7,6 +7,14 @@
 //Script: Implementation of the states from the ModeStates
 
 
+//What it do:
+// - implements the from ModeStates inherited Play Mode States
+// - provides the public event onModeChanged for changes from outside of the mode state
+// - handles the network variable for the play mode via CustomProperties fo the room and Hashtables
+// - sets the first state of the play mode
+// - provides the function for the SwitchModes button in the room UI
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

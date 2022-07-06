@@ -7,6 +7,14 @@
 //Script: Implementing the Setup States
 
 
+//What it do:
+// - implements the from SetupStates inherited Player Setup States
+// - provides a public event onSetupChanged for all the changes that need to be handled from outside of the setup states
+// - activates all displays in the setup
+// - sets the first player setup state
+// - provides functions for the Setup States
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

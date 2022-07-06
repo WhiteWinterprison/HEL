@@ -7,6 +7,11 @@
 //Script: Handling the Multiplayer Setup inside the room
 
 
+//What it do:
+// - registers and unregisters the new multiplayer scene
+// - spawns the currently needed player when the new multiplayer scene is loaded
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

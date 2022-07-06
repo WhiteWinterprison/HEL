@@ -7,6 +7,15 @@
 //Script: State Machine to detect and handle the correct Player Setup
 
 
+//What it do:
+// - provide the base class for the player setup state machine
+// - provides base class functions to hand over protected variables
+// - provides the two derived classes CaveState and VrState
+// - spawns and despawns the correct player whenever the state is changed
+// - leaves the state into the new correct one if the player setup is changed
+// - invokes the event onSetupChanged for other changes that need to happen from outside of the state machine
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

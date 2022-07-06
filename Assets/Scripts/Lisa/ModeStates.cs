@@ -7,6 +7,14 @@
 //Script: State Machine to control the Switch between Building and Simulating Mode
 
 
+//What it do:
+// - provide the base class for the Play Mode States
+// - holds the inherited Mode State classes (BuildMode and SimulationMode)
+// - changes the mode text for the UI button to the correct version when entering the state
+// - invokes the event onModeChanged for changes to be handled outside of the Mode States
+// - checks for if the mode should be changed and behaves accordingly
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
