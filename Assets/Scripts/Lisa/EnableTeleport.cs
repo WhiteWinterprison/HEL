@@ -25,9 +25,10 @@ public class EnableTeleport : MonoBehaviour
     void Start()
     {
         //find the teleportation area in this scene
-        teleportArea = GameObject.FindGameObjectWithTag("Ground").GetComponent<TeleportationArea>();
-
-        //and set this prefabs teleportation provider as the one to use
-        teleportArea.teleportationProvider = teleportProvider;
+        foreach (GameObject teleportArea in GameObject.FindGameObjectsWithTag("Ground")) //find all players
+        {
+            //and set this prefabs teleportation provider as the one to use
+            teleportArea.teleportationProvider = teleportProvider;
+        }
     }
 }

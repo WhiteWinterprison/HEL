@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 980957366222568760}
   - component: {fileID: 980957366222568765}
   - component: {fileID: 980957366222568764}
+  - component: {fileID: 3424297743112557718}
   m_Layer: 0
   m_Name: 1_coal_powerplant
   m_TagString: Building1
@@ -271,3 +272,16 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &3424297743112557718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3564885799059122214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d16431bbc8df049bf25bf37ebd9991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Materials: []

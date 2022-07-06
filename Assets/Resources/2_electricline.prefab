@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6386525497692407036}
   - component: {fileID: 6386525497692502787}
   - component: {fileID: 7910431980437355107}
+  - component: {fileID: 3891948528793606050}
   m_Layer: 0
   m_Name: 2_electricline
   m_TagString: Building2
@@ -271,3 +272,16 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &3891948528793606050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225308873179075040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d16431bbc8df049bf25bf37ebd9991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Materials: []

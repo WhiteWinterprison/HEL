@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9083863281500632580}
   - component: {fileID: 9083863281500632583}
   - component: {fileID: 6982915769467265515}
+  - component: {fileID: 5390148826818063265}
   m_Layer: 0
   m_Name: 5_wind_powerplant
   m_TagString: Building5
@@ -271,3 +272,16 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &5390148826818063265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282498677617235934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d16431bbc8df049bf25bf37ebd9991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Materials: []
