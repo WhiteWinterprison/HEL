@@ -8,8 +8,8 @@
 
 
 //What it do:
-// - provides the functions and Callbacks for connecting to the server
-// - provides the functions and Callbacks for getting into a room
+// - provides the Callbacks for connecting to the server
+// - provides the Callbacks for getting into a room
 // - provides the Callback for leaving the room
 
 
@@ -150,9 +150,21 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         //base.OnLeftRoom();
 
+        //listen to the scene change to spawn the player
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
         //load scene 0
         //instead of the PHOTON scene handling we use the unity scene manager since we do not need to syncronize the scene load for all users
         SceneManager.LoadScene(lobbyIndex.Value); //index must fit the build settings
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Singleton.Instance.GetComponent<PlayerSetup>().SpawnMyPlayer();
+        Debug.Log("Player spawned in Lobby again");
+
+        //stop listening to the scene change
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     #endregion
