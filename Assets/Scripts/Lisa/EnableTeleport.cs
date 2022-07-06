@@ -28,7 +28,7 @@ public class EnableTeleport : MonoBehaviour
         foreach (GameObject teleportArea in GameObject.FindGameObjectsWithTag("Ground")) //find all players
         {
             //and set this prefabs teleportation provider as the one to use
-            teleportArea.teleportationProvider = teleportProvider;
+            teleportArea.GetComponentInChildren<TeleportationArea>().teleportationProvider = teleportProvider;
         }
     }
 }
