@@ -1063,7 +1063,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1008811565220177944, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: near clip plane
-      value: 1.7100067
+      value: 1.7099999
       objectReference: {fileID: 0}
     - target: {fileID: 1008811565220177944, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: m_projectionMatrixMode
@@ -1151,11 +1151,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1008811566664208934, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: near clip plane
-      value: 1.7100067
+      value: 1.7099999
       objectReference: {fileID: 0}
     - target: {fileID: 1008811566664208934, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: m_projectionMatrixMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923666214132250715, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923666214132250715, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923666214132250715, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d90b3955c0d354398afa63d8492084, type: 3}

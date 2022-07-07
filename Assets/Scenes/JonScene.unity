@@ -130,31 +130,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1223131260364450784, guid: 765d85c630924344e94fc403ca611029, type: 3}
-      propertyPath: near clip plane
-      value: 1.7099999
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223131260701959245, guid: 765d85c630924344e94fc403ca611029, type: 3}
-      propertyPath: near clip plane
-      value: 2.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223131261150385867, guid: 765d85c630924344e94fc403ca611029, type: 3}
-      propertyPath: near clip plane
-      value: 1.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223131261240042051, guid: 765d85c630924344e94fc403ca611029, type: 3}
-      propertyPath: near clip plane
-      value: 2.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223131261386682128, guid: 765d85c630924344e94fc403ca611029, type: 3}
-      propertyPath: near clip plane
-      value: 1.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 1223131261806088670, guid: 765d85c630924344e94fc403ca611029, type: 3}
-      propertyPath: near clip plane
-      value: 1.7099999
+    - target: {fileID: 1077961236316871083, guid: 765d85c630924344e94fc403ca611029, type: 3}
+      propertyPath: sceneViewId
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2190669486932555872, guid: 765d85c630924344e94fc403ca611029, type: 3}
+      propertyPath: sceneViewId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132224101430289490, guid: 765d85c630924344e94fc403ca611029, type: 3}
+      propertyPath: sceneViewId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138878713887127664, guid: 765d85c630924344e94fc403ca611029, type: 3}
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}
