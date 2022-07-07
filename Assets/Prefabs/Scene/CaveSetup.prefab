@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4699592035914510878}
-  - component: {fileID: 1879281519398511673}
   - component: {fileID: 5151848178449768684}
+  - component: {fileID: 5285141169000442171}
   m_Layer: 0
   m_Name: Spawn (5)
   m_TagString: CaveSocket
@@ -33,19 +33,6 @@ Transform:
   m_Father: {fileID: 9199917176039852430}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1879281519398511673
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502068897027280251}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.16
-  m_Center: {x: 0, y: 0.22, z: 0}
 --- !u!114 &5151848178449768684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +84,19 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!65 &5285141169000442171
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502068897027280251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2112964280290418546
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,8 +106,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3759234097209390408}
-  - component: {fileID: 8423049782810024391}
   - component: {fileID: 1931459886088328044}
+  - component: {fileID: 8001030966554703958}
   m_Layer: 0
   m_Name: Spawn (4)
   m_TagString: CaveSocket
@@ -130,19 +130,6 @@ Transform:
   m_Father: {fileID: 9199917176039852430}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &8423049782810024391
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112964280290418546}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.16
-  m_Center: {x: 0, y: 0.22, z: 0}
 --- !u!114 &1931459886088328044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +181,19 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!65 &8001030966554703958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112964280290418546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4627461195991816173
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,8 +380,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9199917175455260585}
-  - component: {fileID: 9199917175455259735}
   - component: {fileID: 9199917175455259734}
+  - component: {fileID: 4903946489984927966}
   m_Layer: 0
   m_Name: Spawn (1)
   m_TagString: CaveSocket
@@ -404,19 +404,6 @@ Transform:
   m_Father: {fileID: 9199917176039852430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &9199917175455259735
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9199917175455260584}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.16
-  m_Center: {x: 0, y: 0.22, z: 0}
 --- !u!114 &9199917175455259734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +455,19 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!65 &4903946489984927966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917175455260584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9199917175900542539
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,8 +923,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9199917176375669449}
-  - component: {fileID: 9199917176375669495}
   - component: {fileID: 9199917176375669494}
+  - component: {fileID: 2130297631424555196}
   m_Layer: 0
   m_Name: Spawn (3)
   m_TagString: CaveSocket
@@ -947,19 +947,6 @@ Transform:
   m_Father: {fileID: 9199917176039852430}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &9199917176375669495
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9199917176375669448}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.16
-  m_Center: {x: 0, y: 0.22, z: 0}
 --- !u!114 &9199917176375669494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1011,6 +998,19 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!65 &2130297631424555196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917176375669448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9199917176883391072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,8 +1020,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9199917176883391073}
-  - component: {fileID: 9199917176883391087}
   - component: {fileID: 9199917176883391086}
+  - component: {fileID: 8432154105054650060}
   m_Layer: 0
   m_Name: Spawn (2)
   m_TagString: CaveSocket
@@ -1044,19 +1044,6 @@ Transform:
   m_Father: {fileID: 9199917176039852430}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &9199917176883391087
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9199917176883391072}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.16
-  m_Center: {x: 0, y: 0.22, z: 0}
 --- !u!114 &9199917176883391086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,3 +1095,16 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!65 &8432154105054650060
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917176883391072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
