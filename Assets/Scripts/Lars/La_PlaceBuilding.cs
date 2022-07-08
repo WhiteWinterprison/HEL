@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
 
 using Hashtable = ExitGames.Client.Photon.Hashtable; //This line need to be on every script that uses the Hashtable!!
 
@@ -15,27 +16,33 @@ public class La_PlaceBuilding : MonoBehaviour
     //public bool buildingPlaced;
 
     [SerializeField]
-    Hashtable buildingPlaced = new Hashtable() { { "building1", false }, { "building2", false }, { "building3", false }, { "building4", false }, { "building5", false }, { "building?", false } };
+    Hashtable buildingPlaced = new Hashtable() { { "building1", false }, { "building2", false }, { "building3", false }, { "building4", false }, { "building5", false } };
 
     //script for VR interaction
 
     private void Awake()
     {
+        //making sure the building renderer is recognized for changing material
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+
         //create "building" properties
         buildingPlaced["building1"] = false;
         buildingPlaced["building2"] = false;
         buildingPlaced["building3"] = false;
         buildingPlaced["building4"] = false;
         buildingPlaced["building5"] = false;
-        buildingPlaced["building?"] = false;
         PhotonNetwork.CurrentRoom.SetCustomProperties(buildingPlaced);
     }
 
     void Start()
     {
-        //making sure the building renderer is recognized for changing material
-        rend = GetComponent<Renderer>();
-        rend.enabled = true;
+
+    }
+
+    void Update()
+    {
+        //Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties.ToString());
     }
 
     void OnTriggerEnter(Collider other)
@@ -76,10 +83,6 @@ public class La_PlaceBuilding : MonoBehaviour
         if (this.gameObject.tag == "Building5")
         {
             buildingPlaced["building5"] = true;
-        }
-        else
-        {
-            buildingPlaced["building?"] = true;
         }
         PhotonNetwork.CurrentRoom.SetCustomProperties(buildingPlaced);
     }

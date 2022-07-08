@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 2461695860002526806, guid: fa09fde0d78504d48b3e2d44a2934e74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3077529756800652887, guid: fa09fde0d78504d48b3e2d44a2934e74, type: 3}
       propertyPath: sceneViewId
       value: 2
