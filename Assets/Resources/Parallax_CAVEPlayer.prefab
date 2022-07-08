@@ -33,8 +33,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7041242851020876113}
-  m_RootOrder: 2
+  m_Father: {fileID: 7041242851400523959}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7041242850782014803
 MonoBehaviour:
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 1795277683933414916, guid: 033452cb7562cf54e9d61f1ab564d1f6, type: 3}
+  m_ModelPrefab: {fileID: 0}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -361,10 +361,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1223131260628798087}
-  - {fileID: 7041242851702126657}
-  - {fileID: 7041242850782014800}
   m_Father: {fileID: 7041242851400523959}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7041242851400523957
 GameObject:
@@ -400,6 +398,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7041242851702126657}
+  - {fileID: 7041242850782014800}
   - {fileID: 7041242851020876113}
   - {fileID: 7300365793398278937}
   m_Father: {fileID: 0}
@@ -529,8 +529,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7041242851020876113}
-  m_RootOrder: 1
+  m_Father: {fileID: 7041242851400523959}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7041242851702126661
 MonoBehaviour:
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 1795277683933414916, guid: 033452cb7562cf54e9d61f1ab564d1f6, type: 3}
+  m_ModelPrefab: {fileID: 0}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1063,7 +1063,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1008811565220177944, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: near clip plane
-      value: 1.7099999
+      value: 1.7100067
       objectReference: {fileID: 0}
     - target: {fileID: 1008811565220177944, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: m_projectionMatrixMode
@@ -1151,7 +1151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1008811566664208934, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: near clip plane
-      value: 1.7099999
+      value: 1.7100067
       objectReference: {fileID: 0}
     - target: {fileID: 1008811566664208934, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: m_projectionMatrixMode
@@ -1361,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5881888307642735363, guid: 5ae63befffa5b4749a824fc225b33173, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5881888307642735363, guid: 5ae63befffa5b4749a824fc225b33173, type: 3}
       propertyPath: m_LocalPosition.x
