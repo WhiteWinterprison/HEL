@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.XR.Interaction.Toolkit;
+using Photon.Pun;
+
+using Hashtable = ExitGames.Client.Photon.Hashtable; //need for photon Hash
 
 public class I_BuildingsManager : MonoBehaviour
 {
@@ -86,7 +89,8 @@ public class I_BuildingsManager : MonoBehaviour
     }
 
    void Update()
-   {
+   {    
+        RemovedFromBelt();
         if(canBePlaced == true)
         {
             OnBuilding_placable?.Invoke(); //If the event exist do it
@@ -104,6 +108,21 @@ public class I_BuildingsManager : MonoBehaviour
    {    
         string interactable = Teleporter.GetComponent<XRSocketInteractor>().attachTransform.ToString();
         //Debug.Log(interactable);
+   }
+
+   private void RemovedFromBelt()
+   {
+        //if lars bool == true int -1
+        if((bool)PhotonNetwork.CurrentRoom.CustomProperties["BuildingYeeted"] == true)
+        {
+           BeltCounter.Value -= 1; 
+           Debug.Log("Building was yeeted from ze Belt");
+        }
+        if(BeltCounter.Value < 1)
+        {
+            canBePlaced = false;
+        }
+
    }
 
 
