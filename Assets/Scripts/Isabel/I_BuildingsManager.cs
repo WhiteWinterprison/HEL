@@ -68,7 +68,6 @@ public class I_BuildingsManager : MonoBehaviour
 
         //Subscribing as a Listener to following events:
         I_CaveTable.OnBuildingGiven += BuildingIsGiven;
-        I_VrBelt.OnBuildingPlaced += BuildingIsPlaced;
 
         // BuildingManager shall assign each socketpair which building will be used
         if (VRSockets.Count != CaveSockets.Count)
@@ -174,21 +173,12 @@ public class I_BuildingsManager : MonoBehaviour
     }
 
 
-   private void BuildingIsPlaced()
-   {
-        //Debug.Log("Vr User used building, Bulidings can be given out again");
-        canBePlaced = false;
-        CanBeGiven = true;
-   }
-
-
 
 
   private void OnDisable()
   {
     //unsubscribe to following events if theye are Distroyed:
     I_CaveTable.OnBuildingGiven -= BuildingIsGiven;
-    I_VrBelt.OnBuildingPlaced -= BuildingIsPlaced;
   }
   #endregion 
 
