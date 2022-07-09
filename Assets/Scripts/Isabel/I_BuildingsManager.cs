@@ -25,7 +25,7 @@ public class I_BuildingsManager : MonoBehaviour
     [SerializeField]private List<GameObject> VRSockets; 
     [SerializeField]private List<GameObject> Buildings; 
     [SerializeField] private GameObject Teleporter;
-    private bool canBePlaced= false;
+    private bool spawnInBelt= false;
     private bool CanBeGiven=false ;
     public IntObject BuildingNr;
     public IntObject BeltCounter;
@@ -94,9 +94,12 @@ public class I_BuildingsManager : MonoBehaviour
    {    
         RemovedFromBelt();
         if(canBePlaced == true)
+        // Tell the belt to spawn an obejct
+        if(spawnInBelt == true)
         {
             OnBuilding_placable?.Invoke(); //If the event exist do it
            // Debug.Log("BuildingManager: Place It");
+           spawnInBelt = false;
         }
 
         if(CanBeGiven == true)
@@ -142,10 +145,11 @@ public class I_BuildingsManager : MonoBehaviour
                 //Debug.Log("Building"+ BuildingNr.Value +" is Ready for VR use");
                 //Debug.LogWarning("Manager Chosen Building" + Buildings[i]+ "for Vr user");
                 
-                canBePlaced = true;
-                BeltCounter.Value += 1;
-
-                if(BeltCounter.Value >= VRSockets.Count) //stuff on belt not allowed to be more than sockets exsist
+                spawnInBelt = true;
+                
+                // The Belt Counter will be increased after the object is instatiated which happens after this if statement is checked
+                // To avoid an overflow the count must be reduced by one to quarantee functionality
+                if(BeltCounter.Value >= (VRSockets.Count-1)) //stuff on belt not allowed to be more than sockets exsist
                 {
                     CanBeGiven = false;
                 }

@@ -78,18 +78,17 @@ public class I_VrBelt : MonoBehaviour
        
         //PhotonNetwork.Instantiate(BuildingName, B_position, Quaternion.identity, 0);
         PhotonNetwork.Instantiate(BuildingToSpawn.name , B_position, Quaternion.identity, 0);
-        IsAllowedToSapwn = false;
+
+        BeltCounter.Value += 1;
+        Debug.Log("BeltCounter: "+  BeltCounter.Value);
 
     }
 
     #region Events 
     private void BuildingCanBePlaced()
     {
-        if(IsAllowedToSapwn == true)
-        {
             InstantateObjOnSocket(); //get called to fotern right now
             //Debug.Log("Building waiting to be placed");
-        }
     }
 
     public void BuildWasPlaced()
