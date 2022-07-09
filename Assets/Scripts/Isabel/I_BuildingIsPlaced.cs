@@ -18,9 +18,16 @@ public class I_BuildingIsPlaced : MonoBehaviour
         PhotonNetwork.CurrentRoom.SetCustomProperties(IsBuildingPlaced);
     }
 
-    public void CalculateCounter()
+    public void GrabbedBuildingTrue()
     {
         buildingsPlaced = true;
+        IsBuildingPlaced["BuildingYeeted"] = buildingsPlaced;
+        PhotonNetwork.CurrentRoom.SetCustomProperties(IsBuildingPlaced);
+    }
+
+    public void GrabbedBuildingFalse()
+    {
+        buildingsPlaced = false;
         IsBuildingPlaced["BuildingYeeted"] = buildingsPlaced;
         PhotonNetwork.CurrentRoom.SetCustomProperties(IsBuildingPlaced);
     }
