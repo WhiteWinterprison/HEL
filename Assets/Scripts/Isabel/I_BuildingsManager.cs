@@ -43,7 +43,6 @@ public class I_BuildingsManager : MonoBehaviour
 
     private void Awake()
     {
-        BeltCounter.Value = 0;
         if (Instance == null)
         {
             Instance = this;
@@ -51,18 +50,21 @@ public class I_BuildingsManager : MonoBehaviour
         }
         else Destroy(this.gameObject);
 
-        foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("VRSocket"))
-        {
-            VRSockets.Add(tempObj);
-        }
+    }
+
+    void Start()
+    {   
+        BeltCounter.Value = 0;
         foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("CaveSocket"))
         {
             CaveSockets.Add(tempObj);
         }
-    }
+        foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("VRSocket"))
+        {
+            VRSockets.Add(tempObj);
+        }
 
-    void Start()
-    {
+
         //Subscribing as a Listener to following events:
         I_CaveTable.OnBuildingGiven += BuildingIsGiven;
         I_VrBelt.OnBuildingPlaced += BuildingIsPlaced;

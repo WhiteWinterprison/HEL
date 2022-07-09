@@ -42,14 +42,15 @@ public class I_VrBelt : MonoBehaviour
         }
         else Destroy(this.gameObject);      
         
-        //find Sockets in Runtime
+    }
+    void Start()
+    {
+        
         foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("VRSocket"))
         {
             vrSockets.Add(tempObj);
         } 
-    }
-    void Start()
-    {
+
         //Subscribe to BuildingManager event
         I_BuildingsManager.OnBuilding_placable += BuildingCanBePlaced;
     }
