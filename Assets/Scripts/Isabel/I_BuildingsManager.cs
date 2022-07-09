@@ -27,6 +27,7 @@ public class I_BuildingsManager : MonoBehaviour
     [SerializeField] private GameObject Teleporter;
     private bool spawnInBelt= false;
     private bool CanBeGiven=false ;
+    private bool yeetedBuildingStatus = false;
     public IntObject BuildingNr;
     public IntObject BeltCounter;
 
@@ -92,8 +93,12 @@ public class I_BuildingsManager : MonoBehaviour
 
    void Update()
    {    
-        RemovedFromBelt();
-        if(canBePlaced == true)
+
+        if(yeetedBuildingStatus != (bool)PhotonNetwork.CurrentRoom.CustomProperties["BuildingYeeted"])
+        {   
+            RemovedFromBelt(); 
+        }
+        
         // Tell the belt to spawn an obejct
         if(spawnInBelt == true)
         {
@@ -107,6 +112,8 @@ public class I_BuildingsManager : MonoBehaviour
             OnBuilding_givable?.Invoke();
            // Debug.Log("BuildinManager: Given");
         }
+        yeetedBuildingStatus = (bool)PhotonNetwork.CurrentRoom.CustomProperties["BuildingYeeted"];
+
    }
 
    public void spawnBuilding()
@@ -118,14 +125,11 @@ public class I_BuildingsManager : MonoBehaviour
    private void RemovedFromBelt()
    {
         //if lars bool == true int -1
-        if((bool)PhotonNetwork.CurrentRoom.CustomProperties["BuildingYeeted"] == true)
+        if((bool)PhotonNetwork.CurrentRoom.CustomProperties["BuildingYeeted"] == true && BeltCounter.Value > 0)
         {
            BeltCounter.Value -= 1; 
            Debug.Log("Building was yeeted from ze Belt");
-        }
-        if(BeltCounter.Value < 1)
-        {
-            canBePlaced = false;
+           Debug.Log("BeltCounter: "+ BeltCounter.Value);
         }
 
    }
