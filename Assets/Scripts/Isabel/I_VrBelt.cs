@@ -22,6 +22,7 @@ public class I_VrBelt : MonoBehaviour
     [SerializeField]private List<GameObject> vrSockets; 
     //private bool buildEnabled = false;
     public IntObject BuildingNr;
+    public IntObject BeltCounter;
     private GameObject BuildingToSpawn;
     private bool IsAllowedToSapwn = true;
 
@@ -57,7 +58,7 @@ public class I_VrBelt : MonoBehaviour
     private void InstantateObjOnSocket()
     {
         //dependign on what int we have get differnt transform to Instantiate the obj
-        int i = BuildingNr.Value;
+        int i = BeltCounter.Value;
 
         vrSockets[i].GetComponent<Transform>();
 

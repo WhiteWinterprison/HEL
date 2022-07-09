@@ -25,6 +25,8 @@ public class I_BuildingsManager : MonoBehaviour
     private bool canBePlaced= false;
     private bool CanBeGiven=false ;
     public IntObject BuildingNr;
+    public IntObject BeltCounter;
+
 
     private GameObject BuildingToInstantiate{get; set;}
 
@@ -38,6 +40,7 @@ public class I_BuildingsManager : MonoBehaviour
 
     private void Awake()
     {
+        BeltCounter.Value = 0;
         if (Instance == null)
         {
             Instance = this;
@@ -105,7 +108,7 @@ public class I_BuildingsManager : MonoBehaviour
 
 
 #region Events
-   private void BuildingIsGiven()
+   private void BuildingIsGiven()   // Building is teleported to the VR
    {
         //Get int from I_CaveTable which building was used 
         //use the info to tell what building from List Buildings should be given over 
@@ -119,7 +122,18 @@ public class I_BuildingsManager : MonoBehaviour
                 //Debug.LogWarning("Manager Chosen Building" + Buildings[i]+ "for Vr user");
                 
                 canBePlaced = true;
-                CanBeGiven = false;
+                BeltCounter.Value += 1;
+
+                if(BeltCounter.Value >= VRSockets.Count) //stuff on belt not allowed to be more than sockets exsist
+                {
+                    CanBeGiven = false;
+                }
+                else //if less builings than sockets you can teleport buildings
+                {   
+                    // TODO: Maybe redundant
+                    CanBeGiven = true;
+                }
+                
             }
 
         }       
