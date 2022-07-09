@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 1508538267681673080}
   - component: {fileID: 8366364541267596510}
   - component: {fileID: 4903814373813556033}
+  - component: {fileID: 394888225088754025}
   m_Layer: 0
   m_Name: VRPlayer
   m_TagString: Player
@@ -483,6 +484,18 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 0
+--- !u!114 &394888225088754025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2461695860002526806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66244988aab82b144b8f98508664b12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2461695861810511473
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,28 +982,28 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.02
+    widthMultiplier: 0.032
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.9239369
-        outSlope: 1
-        tangentMode: 65
+        time: -0.0083351135
+        value: 0.9952698
+        inSlope: -0.49762535
+        outSlope: -0.49762535
+        tangentMode: 34
         weightedMode: 0
         inWeight: 0
-        outWeight: 0.18038741
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 0.99593556
-        tangentMode: 5
-        weightedMode: 0
-        inWeight: 0.19854718
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9916687
+        value: 0.49764252
+        inSlope: -0.49762535
+        outSlope: -0.49762535
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1291,6 +1304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vrSockets: []
   BuildingNr: {fileID: 11400000, guid: 89001213ad8cc4a45982795c64da9086, type: 2}
+  BeltCounter: {fileID: 0}
 --- !u!114 &440669709253012686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,7 +1580,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 394888225088754025}
+        m_TargetAssemblyTypeName: I_BuildingIsPlaced, Assembly-CSharp
+        m_MethodName: CalculateCounter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1687,28 +1713,28 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.02
+    widthMultiplier: 0.032
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.9239369
-        outSlope: 1
-        tangentMode: 65
+        time: -0.0083351135
+        value: 0.9952698
+        inSlope: -0.49762535
+        outSlope: -0.49762535
+        tangentMode: 34
         weightedMode: 0
         inWeight: 0
-        outWeight: 0.18038741
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 0.99593556
-        tangentMode: 5
-        weightedMode: 0
-        inWeight: 0.19854718
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9916687
+        value: 0.49764252
+        inSlope: -0.49762535
+        outSlope: -0.49762535
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
