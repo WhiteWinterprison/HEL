@@ -3,20 +3,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
-using Photon.Realtime;
-
-using Hashtable = ExitGames.Client.Photon.Hashtable; //This line need to be on every script that uses the Hashtable!!
 
 public class La_PlaceBuilding : MonoBehaviour
 { 
     Renderer rend;
     public Material[] Materials; //place materials PutDown in element 0 and PickUp in element 1
-
-    //public bool buildingPlaced;
-
-    [SerializeField]
-    Hashtable buildingPlaced = new Hashtable() { { "building1", false }, { "building2", false }, { "building3", false }, { "building4", false }, { "building5", false } };
+    GameObject buildingBool;
 
     //script for VR interaction
 
@@ -26,13 +18,7 @@ public class La_PlaceBuilding : MonoBehaviour
         rend = GetComponent<Renderer>();
         rend.enabled = true;
 
-        //create "building" properties
-        buildingPlaced["building1"] = false;
-        buildingPlaced["building2"] = false;
-        buildingPlaced["building3"] = false;
-        buildingPlaced["building4"] = false;
-        buildingPlaced["building5"] = false;
-        PhotonNetwork.CurrentRoom.SetCustomProperties(buildingPlaced);
+        buildingBool = GameObject.Find("RoomManager");
     }
 
     void Start()
@@ -42,49 +28,25 @@ public class La_PlaceBuilding : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties.ToString());
+
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-            if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
-            {
-                rend.material = Materials[0]; //change material to be put down
-                SetBuildingToPlaced();
-            }
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
+        {
+            rend.material = Materials[0]; //change material to be put down
+            GameObject build = this.gameObject;
+            buildingBool.GetComponent<La_BuildingBoolManager>().SetBuildingToPlaced(build);
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-            if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
-            {
-                rend.material = Materials[1]; //change material to be picked up
-            }
-    }
-
-    public void SetBuildingToPlaced()
-    {
-        if(this.gameObject.tag == "Building1")
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
         {
-            buildingPlaced["building1"] = true;
+            rend.material = Materials[1]; //change material to be picked up
         }
-        if (this.gameObject.tag == "Building2")
-        {
-            buildingPlaced["building2"] = true;
-        }
-        if (this.gameObject.tag == "Building3")
-        {
-            buildingPlaced["building3"] = true;
-        }
-        if (this.gameObject.tag == "Building4")
-        {
-            buildingPlaced["building4"] = true;
-        }
-        if (this.gameObject.tag == "Building5")
-        {
-            buildingPlaced["building5"] = true;
-        }
-        PhotonNetwork.CurrentRoom.SetCustomProperties(buildingPlaced);
     }
 }
 
