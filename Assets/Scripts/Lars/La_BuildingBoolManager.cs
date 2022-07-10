@@ -13,6 +13,7 @@ public class La_BuildingBoolManager : MonoBehaviour
 
     private void Awake()
     {
+        // Isabel TODO: Maybe move to start if NullPtr occur
         //create "building" properties
         buildingPlaced["building1"] = false;
         buildingPlaced["building2"] = false;
@@ -25,13 +26,13 @@ public class La_BuildingBoolManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties.ToString());
+        //Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties.ToString());
     }
 
     public void SetBuildingToPlaced(GameObject build)

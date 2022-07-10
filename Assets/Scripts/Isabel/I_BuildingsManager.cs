@@ -51,15 +51,19 @@ public class I_BuildingsManager : MonoBehaviour
         }
         else Destroy(this.gameObject);
 
-    }
-
-    void Start()
-    {   
         BeltCounter.Value = 0;
         foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("CaveSocket"))
         {
             CaveSockets.Add(tempObj);
         }
+        foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("VRSocket"))
+        {
+            VRSockets.Add(tempObj);
+        }
+    }
+
+    void Start()
+    {   
         foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("VRSocket"))
         {
             VRSockets.Add(tempObj);
@@ -75,15 +79,15 @@ public class I_BuildingsManager : MonoBehaviour
             Debug.LogError("Mismatch on socket count between Cave and VR\n Check if Sockets are tagged");
         }
 
-        for (int i = 0; i < VRSockets.Count; i++)
+        for (int i = 0; i < CaveSockets.Count; i++)
         {
             if(i >= Buildings.Count)
             {   
                 Debug.LogWarning("There are not enough buildings in the list of the BuildingsManager!");
                 break;
             }
-            VRSockets[i].GetComponent<XRSocketInteractor>().startingSelectedInteractable = Buildings[i].GetComponent<XRGrabInteractable>();
-            CaveSockets[i].GetComponent<XRSocketInteractor>().startingSelectedInteractable = Buildings[i].GetComponent<XRGrabInteractable>();
+            //VRSockets[i].GetComponent<XRSocketInteractor>().startingSelectedInteractable = Buildings[i].GetComponent<XRGrabInteractable>();
+            //CaveSockets[i].GetComponent<XRSocketInteractor>().startingSelectedInteractable = Buildings[i].GetComponent<XRGrabInteractable>();
         }
 
 

@@ -12,11 +12,17 @@ public class I_BuildingIsPlaced : MonoBehaviour
     [SerializeField] Hashtable IsBuildingPlaced = new Hashtable() { {"BuildingYeeted", false} }; //if builing is thorwn out of belt !!donst check if it placed just if its no longer in belt!!
     
 
-    private void Start()
+    private void Awake()
     {
         IsBuildingPlaced["BuildingYeeted"] = false;
         PhotonNetwork.CurrentRoom.SetCustomProperties(IsBuildingPlaced);
     }
+    /*
+    private void Start()
+    {
+        IsBuildingPlaced["BuildingYeeted"] = false;
+        PhotonNetwork.CurrentRoom.SetCustomProperties(IsBuildingPlaced);
+    }*/
 
     public void GrabbedBuildingTrue()
     {
