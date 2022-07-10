@@ -98,7 +98,7 @@ public class I_VrBelt : MonoBehaviour
         PhotonNetwork.Instantiate(BuildingToSpawn.name , B_position, Quaternion.identity, 0);
 
         BeltCounter.Value += 1;
-        Debug.Log("BeltCounter: "+  BeltCounter.Value);
+        //Debug.Log("BeltCounter: "+  BeltCounter.Value);
 
     }
 

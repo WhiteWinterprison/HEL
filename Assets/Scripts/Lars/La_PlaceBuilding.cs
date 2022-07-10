@@ -38,6 +38,10 @@ public class La_PlaceBuilding : MonoBehaviour
             rend.material = Materials[0]; //change material to be put down
             GameObject build = this.gameObject;
             buildingBool.GetComponent<La_BuildingBoolManager>().SetBuildingToPlaced(build);
+
+            //resizing building for Floore (Isabel)
+            build.transform.localScale = new Vector3(0.03f,0.03f,0.03f);
+        
         }
     }
 
@@ -46,6 +50,10 @@ public class La_PlaceBuilding : MonoBehaviour
         if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
         {
             rend.material = Materials[1]; //change material to be picked up
+
+            //resizing building for VR Belt (Isabel)
+            this.transform.localScale = new Vector3(0.01f,0.01f,0.01f);
+
         }
     }
 }
