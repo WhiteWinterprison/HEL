@@ -46,6 +46,10 @@ public class RoomMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject dataUI;
 
+    [Header("The Data Net visualizing Electical Flow in the Area")]
+    [SerializeField]
+    private GameObject dataNet;
+
     #endregion
 
     private void Awake()
@@ -96,8 +100,8 @@ public class RoomMenuManager : MonoBehaviour
         //show the data visualization if in simulation mode, otherwise hide it
         switch (playMode.Value)
         {
-            case true: dataUI.SetActive(false); break;
-            case false: dataUI.SetActive(true); break;
+            case true: dataUI.SetActive(false); dataNet.SetActive(false); break;
+            case false: dataUI.SetActive(true); dataNet.SetActive(true); break;
         }
     }
 
