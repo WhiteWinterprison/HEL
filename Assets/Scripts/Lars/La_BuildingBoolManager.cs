@@ -36,7 +36,9 @@ public class La_BuildingBoolManager : MonoBehaviour
     }
 
     public void SetBuildingToPlaced(GameObject build)
-    {
+    {   
+
+        Debug.Log("Lars manager script called");
         if (build.gameObject.tag == "Building1")
         {
             buildingPlaced["building1"] = true;
@@ -58,5 +60,6 @@ public class La_BuildingBoolManager : MonoBehaviour
             buildingPlaced["building5"] = true;
         }
         PhotonNetwork.CurrentRoom.SetCustomProperties(buildingPlaced);
+        Debug.Log("End of Lars manager script called");
     }
 }

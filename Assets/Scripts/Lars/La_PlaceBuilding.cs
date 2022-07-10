@@ -9,6 +9,7 @@ public class La_PlaceBuilding : MonoBehaviour
     Renderer rend;
     public Material[] Materials; //place materials PutDown in element 0 and PickUp in element 1
     GameObject buildingBool;
+    La_BuildingBoolManager Manager;
 
     //script for VR interaction
 
@@ -19,11 +20,14 @@ public class La_PlaceBuilding : MonoBehaviour
         rend.enabled = true;
 
         buildingBool = GameObject.Find("RoomManager");
+        Manager = buildingBool.GetComponent<La_BuildingBoolManager>();
+        Debug.Log("BuildingBool find result  "+ buildingBool);
+        Debug.Log("Manager find result   "+ Manager);
     }
 
     void Start()
     {
-
+        buildingBool = GameObject.Find("RoomManager");
     }
 
     void Update()
@@ -37,7 +41,8 @@ public class La_PlaceBuilding : MonoBehaviour
         {
             rend.material = Materials[0]; //change material to be put down
             GameObject build = this.gameObject;
-            buildingBool.GetComponent<La_BuildingBoolManager>().SetBuildingToPlaced(build);
+            
+            Manager.SetBuildingToPlaced(build);
 
             //resizing building for Floore (Isabel)
             build.transform.localScale = new Vector3(0.03f,0.03f,0.03f);
