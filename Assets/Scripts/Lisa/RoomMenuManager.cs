@@ -27,6 +27,7 @@ public class RoomMenuManager : MonoBehaviour
     #region Variables
 
     public IntReference playerSetup;
+    public BoolReference playMode;
     public StringReference modeText;
 
     [Header("The Textfields of the Switch Modes Buttons inside of the different UI Prefabs")]
@@ -42,6 +43,8 @@ public class RoomMenuManager : MonoBehaviour
     private GameObject caveUI;
     [SerializeField]
     private GameObject vrUI;
+    [SerializeField]
+    private GameObject dataUI;
 
     #endregion
 
@@ -89,6 +92,13 @@ public class RoomMenuManager : MonoBehaviour
         //update the mode text inside of the mode button
         myText.text = modeText.Value;
         Debug.Log("Updated Mode Text");
+
+        //show the data visualization if in simulation mode, otherwise hide it
+        switch (playMode.Value)
+        {
+            case true: dataUI.SetActive(false); break;
+            case false: dataUI.SetActive(true); break;
+        }
     }
 
     public void UpdateUISetup()
