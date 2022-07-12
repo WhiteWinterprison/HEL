@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8207191830222156351}
   - component: {fileID: 2355911448202417486}
   - component: {fileID: 4841795685510383598}
+  - component: {fileID: 7542049893107254747}
+  - component: {fileID: 4501638848596224329}
   m_Layer: 3
   m_Name: Socket Interactor (4)
   m_TagString: Socket
@@ -97,6 +99,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &7542049893107254747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587693634724779447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 4501638848596224329}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &4501638848596224329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587693634724779447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &704556868426763736
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +196,8 @@ GameObject:
   - component: {fileID: 2757855802196825466}
   - component: {fileID: 1081331710973104593}
   - component: {fileID: 7852579857570859046}
+  - component: {fileID: 1460435886009111581}
+  - component: {fileID: 422783133565620804}
   m_Layer: 3
   m_Name: Socket Interactor
   m_TagString: Socket
@@ -241,6 +284,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &1460435886009111581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090021987937970163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &422783133565620804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090021987937970163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1266899747686138843
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +333,8 @@ GameObject:
   - component: {fileID: 8312228340154208528}
   - component: {fileID: 7495391045042112969}
   - component: {fileID: 3180577722576947179}
+  - component: {fileID: 710273808890071535}
+  - component: {fileID: 7444085582309902871}
   m_Layer: 3
   m_Name: Socket Interactor (1)
   m_TagString: Socket
@@ -338,6 +421,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &710273808890071535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266899747686138843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &7444085582309902871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266899747686138843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1429297304092327802
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +470,8 @@ GameObject:
   - component: {fileID: 603574997712950946}
   - component: {fileID: 8468672352548692223}
   - component: {fileID: 5341006361318338595}
+  - component: {fileID: 5551310273153354601}
+  - component: {fileID: 809218191759823113}
   m_Layer: 3
   m_Name: Socket Interactor (10)
   m_TagString: Socket
@@ -435,6 +558,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &5551310273153354601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429297304092327802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &809218191759823113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429297304092327802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1752672938298034077
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +607,8 @@ GameObject:
   - component: {fileID: 6804122138544610210}
   - component: {fileID: 8465123258617897509}
   - component: {fileID: 2540983268709418088}
+  - component: {fileID: 8106448774778035306}
+  - component: {fileID: 6457220881849281554}
   m_Layer: 3
   m_Name: Socket Interactor (14)
   m_TagString: Socket
@@ -532,6 +695,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &8106448774778035306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752672938298034077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6457220881849281554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752672938298034077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1822490280631257538
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +744,8 @@ GameObject:
   - component: {fileID: 5223717926951665384}
   - component: {fileID: 73553648520839524}
   - component: {fileID: 1350945553396429803}
+  - component: {fileID: 2484983805446031359}
+  - component: {fileID: 1464008674966774669}
   m_Layer: 3
   m_Name: Socket Interactor (8)
   m_TagString: Socket
@@ -629,6 +832,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &2484983805446031359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822490280631257538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1464008674966774669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822490280631257538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &3403428166107471570
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,6 +881,8 @@ GameObject:
   - component: {fileID: 5695110777117586406}
   - component: {fileID: 7126511791922266959}
   - component: {fileID: 9146594163923228846}
+  - component: {fileID: 5617147634863847656}
+  - component: {fileID: 6693059763357353000}
   m_Layer: 3
   m_Name: Socket Interactor (15)
   m_TagString: Socket
@@ -726,6 +969,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &5617147634863847656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403428166107471570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6693059763357353000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403428166107471570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &3910729804849887890
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +1018,8 @@ GameObject:
   - component: {fileID: 3314375518910591143}
   - component: {fileID: 510328262092413179}
   - component: {fileID: 1567499793690047406}
+  - component: {fileID: 7450719426281201214}
+  - component: {fileID: 6316196033168898869}
   m_Layer: 3
   m_Name: Socket Interactor (5)
   m_TagString: Socket
@@ -823,6 +1106,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &7450719426281201214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3910729804849887890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6316196033168898869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3910729804849887890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &3979407085929663181
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +1155,8 @@ GameObject:
   - component: {fileID: 4888385553173683245}
   - component: {fileID: 4638250398624114933}
   - component: {fileID: 4190281766153644661}
+  - component: {fileID: 681018954156944201}
+  - component: {fileID: 3317223264649651986}
   m_Layer: 3
   m_Name: Socket Interactor (6)
   m_TagString: Socket
@@ -920,6 +1243,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &681018954156944201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979407085929663181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &3317223264649651986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979407085929663181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &5315663914135870697
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +1292,8 @@ GameObject:
   - component: {fileID: 8264013025258677801}
   - component: {fileID: 5249729843310685028}
   - component: {fileID: 2201508705795342446}
+  - component: {fileID: 767791087590850813}
+  - component: {fileID: 6626121628351225904}
   m_Layer: 3
   m_Name: Socket Interactor (13)
   m_TagString: Socket
@@ -1017,6 +1380,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &767791087590850813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315663914135870697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6626121628351225904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315663914135870697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &6071461724242864028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1429,8 @@ GameObject:
   - component: {fileID: 2004570231259305991}
   - component: {fileID: 602398125894785295}
   - component: {fileID: 704636666996064311}
+  - component: {fileID: 2938951990011463419}
+  - component: {fileID: 9125298190725978489}
   m_Layer: 3
   m_Name: Socket Interactor (2)
   m_TagString: Socket
@@ -1114,6 +1517,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &2938951990011463419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071461724242864028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &9125298190725978489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071461724242864028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &7105261207069152992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1566,8 @@ GameObject:
   - component: {fileID: 7319354404569868876}
   - component: {fileID: 7788662820732539229}
   - component: {fileID: 4968975745942596797}
+  - component: {fileID: 7426503642657856664}
+  - component: {fileID: 2174104283475630831}
   m_Layer: 3
   m_Name: Socket Interactor (11)
   m_TagString: Socket
@@ -1211,6 +1654,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &7426503642657856664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105261207069152992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &2174104283475630831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105261207069152992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &7403655080818700477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,6 +1703,8 @@ GameObject:
   - component: {fileID: 7684769337282346677}
   - component: {fileID: 4841155862180313251}
   - component: {fileID: 6028576672863585829}
+  - component: {fileID: 3127993343116363864}
+  - component: {fileID: 7855263787020725499}
   m_Layer: 3
   m_Name: Socket Interactor (12)
   m_TagString: Socket
@@ -1308,6 +1791,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &3127993343116363864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403655080818700477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &7855263787020725499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403655080818700477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &7691063015839326266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1840,8 @@ GameObject:
   - component: {fileID: 5674894987116436236}
   - component: {fileID: 8333580948004267454}
   - component: {fileID: 2950595503167530539}
+  - component: {fileID: 1882245965017750004}
+  - component: {fileID: 2502219827873529188}
   m_Layer: 3
   m_Name: Socket Interactor (9)
   m_TagString: Socket
@@ -1405,6 +1928,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &1882245965017750004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7691063015839326266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &2502219827873529188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7691063015839326266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &8206054496585755099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,6 +1977,8 @@ GameObject:
   - component: {fileID: 9182757894864289019}
   - component: {fileID: 3335930035258747690}
   - component: {fileID: 3883937906682460969}
+  - component: {fileID: 5959451875690095904}
+  - component: {fileID: 6180029919090337834}
   m_Layer: 3
   m_Name: Socket Interactor (3)
   m_TagString: Socket
@@ -1502,6 +2065,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &5959451875690095904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206054496585755099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6180029919090337834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206054496585755099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &8867484788624802114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +2114,8 @@ GameObject:
   - component: {fileID: 2124137986010526430}
   - component: {fileID: 290862840652471900}
   - component: {fileID: 6190026844733087430}
+  - component: {fileID: 4199768940817468608}
+  - component: {fileID: 3513150449670219846}
   m_Layer: 3
   m_Name: Socket Interactor (7)
   m_TagString: Socket
@@ -1599,3 +2202,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.4999999, z: 1}
   m_Center: {x: -0.019225795, y: 0.49999994, z: 0.29385975}
+--- !u!114 &4199768940817468608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8867484788624802114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &3513150449670219846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8867484788624802114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
