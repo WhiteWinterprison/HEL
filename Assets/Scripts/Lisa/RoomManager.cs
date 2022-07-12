@@ -12,6 +12,9 @@
 // - spawns the currently needed player when the new multiplayer scene is loaded
 
 
+//Component of non-Singleton manager game object (Room Manager prefab) in Multiplayer scene
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

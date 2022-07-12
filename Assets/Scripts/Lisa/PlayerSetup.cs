@@ -15,6 +15,9 @@
 // - provides functions for the Setup States
 
 
+//Component of Singleton manager game object (Network Manager prefab) in Lobby scene
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

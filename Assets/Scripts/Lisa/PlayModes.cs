@@ -15,6 +15,9 @@
 // - provides the function for the SwitchModes button in the room UI
 
 
+//Component of non-Singleton manager game object (Room Manager prefab) in Multiplayer scene
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -92,7 +95,9 @@ public class PlayModes : MonoBehaviour
     //function provided for the SwitchModes button in the UI
     public void SwitchModes()
     {
+        //get the variable from the network
         bool newBool = (bool)PhotonNetwork.CurrentRoom.CustomProperties["Modes"];
+
         if (newBool)
         {
             newBool = false;
@@ -102,6 +107,7 @@ public class PlayModes : MonoBehaviour
             newBool = true;
         }
 
+        //hand over the variable to the network
         myModeBoolean["Modes"] = newBool;
         PhotonNetwork.CurrentRoom.SetCustomProperties(myModeBoolean);
     }
