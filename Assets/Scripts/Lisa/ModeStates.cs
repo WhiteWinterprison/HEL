@@ -80,6 +80,7 @@ public class ModeStates
 
 public class BuildMode : ModeStates
 {
+    //constructor
     public BuildMode(StringReference _modeText, BoolReference _playMode, PlayModes _playModes)
         : base(_modeText, _playMode, _playModes) //hand over the values to the base class
     {
@@ -91,8 +92,8 @@ public class BuildMode : ModeStates
 
     public override void Enter()
     {
-        modeText.Variable.Value = "Build Mode";
-        playModes.onModeChanged.Invoke();
+        modeText.Variable.Value = "Build Mode"; //mode individual text for user feedback
+        playModes.onModeChanged.Invoke(); //tell the other scripts about being in Build Mode
         Debug.Log("entered Build Mode");
         base.Enter();
     }
@@ -132,8 +133,8 @@ public class SimulationMode : ModeStates
 
     public override void Enter()
     {
-        modeText.Variable.Value = "Simulation Mode";
-        playModes.onModeChanged.Invoke();
+        modeText.Variable.Value = "Simulation Mode"; //mode individual text for user feedback
+        playModes.onModeChanged.Invoke(); //tell the other scripts about being in Simulation Mode
         Debug.Log("entered Simulation Mode");
         base.Enter();
     }

@@ -10,9 +10,12 @@
 //What it do:
 // - store the relevant variables for updating the UI inside the multiplayer room
 // - set the starting state of the UI
-// - update the UI every time the player setup changes
+// - update the UI every time the player setup changes (not used anymore since player switch button was just for easier debugging)
 // - provide functions for the buttons of the UI
 // - provide functions for new states (mode change and player setup change)
+
+
+//Component of non-Singleton game object in multiplayer scene (Room Menu Manager prefab)
 
 
 using System.Collections;

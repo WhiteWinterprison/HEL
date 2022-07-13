@@ -6,6 +6,8 @@
 
 //Script: Disabling the other users tracking to avoid tracking problems
 
+//Component of player prefab
+
 
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +21,7 @@ public class DisableTrackers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //only needed when in the multiplayer scene already (otherwise there are no multiple players)
         if (PhotonNetwork.InRoom)
         {
             foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Player")) //find all the players

@@ -100,6 +100,7 @@ public class SetupStates
 
 public class CaveState : SetupStates
 {
+    //Contructor
     public CaveState(GameObject _cavePrefab, GameObject _vrPrefab, Vector3Reference _defaultSpawn, Vector3Reference _caveSpawn, Vector3Reference _vrSpawn)
         : base(_cavePrefab, _vrPrefab, _defaultSpawn, _caveSpawn, _vrSpawn) //hand over the values to the base class
     {
@@ -138,6 +139,7 @@ public class CaveState : SetupStates
 
 public class VrState : SetupStates
 {
+    //Contructor
     public VrState(GameObject _cavePrefab, GameObject _vrPrefab, Vector3Reference _defaultSpawn, Vector3Reference _caveSpawn, Vector3Reference _vrSpawn)
         : base(_cavePrefab, _vrPrefab, _defaultSpawn, _caveSpawn, _vrSpawn) //hand over the values to the base class
     {

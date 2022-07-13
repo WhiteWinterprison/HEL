@@ -4,7 +4,9 @@
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 
-//Script: Enabling the Teleportation for the VR user
+//Script: Enabling the Teleportation for the VR user by adding the users teleportation provider as the one to use for the teleportation areas
+
+//Component of VR player prefab
 
 
 using System.Collections;
@@ -24,8 +26,8 @@ public class EnableTeleport : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //find the teleportation area in this scene
-        foreach (GameObject teleportArea in GameObject.FindGameObjectsWithTag("Ground")) //find all players
+        //find the teleportation areas in this scene
+        foreach (GameObject teleportArea in GameObject.FindGameObjectsWithTag("Ground"))
         {
             //and set this prefabs teleportation provider as the one to use
             teleportArea.GetComponentInChildren<TeleportationArea>().teleportationProvider = teleportProvider;

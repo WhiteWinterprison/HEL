@@ -10,8 +10,10 @@
 //What it do:
 // - store the relevant variables for updating the UI inside the lobby room
 // - set the starting state of the UI
-// - update the UI every time the player setup changes
+// - update the UI every time the player setup changes (not used anymore since player switch button was just for easier debugging)
 // - provide functions for the buttons of the UI
+
+//Component of some non-Singleton manager game object (Main Menu Manager prefab) in Lobby scene
 
 
 using System.Collections;
@@ -36,14 +38,16 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private string connectedToServer;
 
-    [Header("Switching between the Player Setups")]
+    //not used anymore since player switch button was just for easier debugging
+
+    /*[Header("Switching between the Player Setups")]
     [SerializeField]
     private GameObject switchButton;
     [SerializeField]
     private string cave;
     [SerializeField]
     private string vr;
-    private int _switchInt = 1;
+    private int _switchInt = 1;*/
 
     [Header("The button to join a room and its variables")]
     [SerializeField]
@@ -76,13 +80,15 @@ public class MainMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //based on the player setup set the text in the setup switch button
-        switch (playerSetup.Value)
+        //not used anymore since player switch button was just for easier debugging
+
+        //based on the player setup set the text in the setup switch button (user feedback)
+        /*switch (playerSetup.Value)
         {
             case 1: switchButton.GetComponentInChildren<TextMeshProUGUI>().text = cave; _switchInt = 1; break;
             case 2: switchButton.GetComponentInChildren<TextMeshProUGUI>().text = vr; _switchInt = 2; break;
             default: break;
-        }
+        }*/
     }
 
     #endregion
@@ -108,11 +114,13 @@ public class MainMenuManager : MonoBehaviour
             serverButton.GetComponentInChildren<TextMeshProUGUI>().text = connectToServer;
         }
 
+        //not used anymore since player switch button was just for easier debugging
+
         //------------------------------------------------------------------//
         //handle the user feedback about the currently selected player setup//
         //------------------------------------------------------------------//
 
-        if (playerSetup.Value != _switchInt)
+        /*if (playerSetup.Value != _switchInt)
         {
             switch (playerSetup.Value)
             {
@@ -120,7 +128,7 @@ public class MainMenuManager : MonoBehaviour
                 case 2: switchButton.GetComponentInChildren<TextMeshProUGUI>().text = vr; _switchInt = 2; break;
                 default: break;
             }
-        }
+        }*/
     }
 
     #endregion
@@ -194,8 +202,10 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    //not used anymore since player switch button was just for easier debugging
+
     //function provided for the setup changer button
-    public void ChangeSetup()
+    /*public void ChangeSetup()
     {
         switch (playerSetup.Value)
         {
@@ -203,7 +213,7 @@ public class MainMenuManager : MonoBehaviour
             case 2: playerSetup.Variable.Value = 1; break;
             default: break;
         }
-    }
+    }*/
 
     #endregion
 }

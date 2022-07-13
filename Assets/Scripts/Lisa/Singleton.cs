@@ -4,11 +4,14 @@
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 
-//Script: Providing a Singleton Pattern for the Network Manager GameObject
+//Script: Providing a Singleton Pattern for the Network Manager GameObject for better visibility what object is a Singleton
 
 
 //What it do:
 // - provide a singleton pattern for a singleton object so we can easily see which object is a singleton in our scenes
+
+
+//Component of ONE Singleton Manager (Network Manager prefab)
 
 
 using System.Collections;
