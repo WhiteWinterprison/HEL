@@ -1032,9 +1032,9 @@ GameObject:
   - component: {fileID: 7638546221052881241}
   - component: {fileID: 7638546221052881240}
   - component: {fileID: 7638546221052881239}
-  - component: {fileID: 7798866762358017334}
   - component: {fileID: 5602080575442284234}
   - component: {fileID: 2150950775535059092}
+  - component: {fileID: 7798866762358017334}
   m_Layer: 0
   m_Name: Teleport
   m_TagString: Building2
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1798528935781281342}
         m_TargetAssemblyTypeName: I_CaveTable, Assembly-CSharp
         m_MethodName: GetBuildingInTeleporter
         m_Mode: 1
@@ -1183,21 +1183,6 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &7798866762358017334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7638546221052881237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a480e3860efbf547a77c742da745ec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InfoTxt: "This script can be used to detect what obj is colliding with the socket
-    \n!!!!Pls Check the collider as a trigger !!!"
-  BuildingName: 
 --- !u!114 &5602080575442284234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1237,6 +1222,21 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7798866762358017334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638546221052881237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a480e3860efbf547a77c742da745ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoTxt: "This script can be used to detect what obj is colliding with the socket
+    \n!!!!Pls Check the collider as a trigger !!!"
+  BuildingName: 
 --- !u!1001 &1572717799605401950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1311,7 +1311,7 @@ PrefabInstance:
     - target: {fileID: 4321514657177891973, guid: c7652e0b5a5f524499edc72f99050b2b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e4f374c9db3dad94fb2921c726edf3e1, type: 2}
+      objectReference: {fileID: 2100000, guid: f5c7e0dc02cf7e14c8b0a4d669c6aade, type: 2}
     - target: {fileID: 4406155116359948159, guid: c7652e0b5a5f524499edc72f99050b2b, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.03
@@ -1369,5 +1369,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7cdfd31044c2a4ea462ad02dee7141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleporterSocket: {fileID: 0}
+  teleporterSocket: {fileID: 7638546221052881239}
   BuildingNr: {fileID: 11400000, guid: 89001213ad8cc4a45982795c64da9086, type: 2}
