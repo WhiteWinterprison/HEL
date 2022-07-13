@@ -5,50 +5,68 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class La_PlaceBuilding : MonoBehaviour
-{
-    //public GameObject prefab;
-    //bool placedBuilding;
-  
+{ 
     Renderer rend;
-    public Material[] Materials;
+    public Material[] Materials; //place materials PutDown in element 0 and PickUp in element 1
+    GameObject buildingBool;
+    La_BuildingBoolManager Manager;
 
     //script for VR interaction
-    void Start()
+
+    private void Awake()
     {
+        //making sure the building renderer is recognized for changing material
         rend = GetComponent<Renderer>();
         rend.enabled = true;
+
+        buildingBool = GameObject.Find("RoomManager");
+        Manager = buildingBool.GetComponent<La_BuildingBoolManager>();
+        Debug.Log("BuildingBool find result  "+ buildingBool);
+        Debug.Log("Manager find result   "+ Manager);
     }
 
-    void OnTriggerEnter(Collider other)
+    void Start()
     {
-        if (rend != null)
+        buildingBool = GameObject.Find("RoomManager");
+    }
+
+    void Update()
+    {
+
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
         {
-            if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
-            {
-                rend.material = Materials[0];
-            }
+            rend.material = Materials[0]; //change material to be put down
+            GameObject build = this.gameObject;
+            
+            Manager.SetBuildingToPlaced(build);
+
+            //resizing building for Floore (Isabel)
+            build.transform.localScale = new Vector3(0.03f,0.03f,0.03f);
+        
         }
-        else
-            Debug.LogWarning("Building Renderer not found, unable to change material");
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (rend != null)
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
         {
-            if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Socket")
-            {
-                rend.material = Materials[1];
-            }
+            rend.material = Materials[1]; //change material to be picked up
+
+            //resizing building for VR Belt (Isabel)
+            this.transform.localScale = new Vector3(0.01f,0.01f,0.01f);
+
         }
-        else
-            Debug.LogWarning("Building Renderer not found, unable to change material");
     }
 }
 
-//archive code
 
-// script for mouse interaction
+#region archive code
+
+// script for mouse interaction where grey building is replaced with textured building
 
 //RaycastHit hit;
 
@@ -80,3 +98,5 @@ void Update()
     }
 }
 */
+
+#endregion

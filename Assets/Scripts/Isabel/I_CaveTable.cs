@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class I_CaveTable : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class I_CaveTable : MonoBehaviour
     //----------Reverences-----------
     public static I_CaveTable Instance { set; get; }
     I_CollisionWithSocket i_socketCollision;
+
+    public XRSocketInteractor teleporterSocket;
 
     //----------Variables-------------
     //private bool buildingEnabled = true;
@@ -80,6 +83,23 @@ public class I_CaveTable : MonoBehaviour
             Debug.LogError("Obj without tag in Teleporter/n check if all buildigns and children are tagged");
         }
     }
+
+    /*
+    //---------------------------------------------------------------------------------------
+    //---------------------------------------------------------------------------------------
+    //-----------------------------HOW to get infor if stuff is inhj socket------------------
+    void Update()
+    {
+
+        //-----------------------------HOW to get infor if stuff is inhj socket------------------
+        IXRSelectInteractable objName = teleporterSocket.GetOldestInteractableSelected();
+       
+        Debug.Log(objName);
+        //--------------------------------------------------------------------------------------
+    }
+    //-----------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------
+    */
 
 
     #region Events

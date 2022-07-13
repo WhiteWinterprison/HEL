@@ -4,6 +4,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.XR.Interaction.Toolkit;
 using Photon.Pun;
 using Photon.Realtime;
 
@@ -22,6 +23,7 @@ public class I_VrBelt : MonoBehaviour
     [SerializeField]private List<GameObject> vrSockets; 
     //private bool buildEnabled = false;
     public IntObject BuildingNr;
+    public IntObject BeltCounter;
     private GameObject BuildingToSpawn;
     private bool IsAllowedToSapwn = true;
 
@@ -39,16 +41,18 @@ public class I_VrBelt : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(Instance);
         }
-        else Destroy(this.gameObject);      
-        
-        //find Sockets in Runtime
+        else Destroy(this.gameObject);   
         foreach(GameObject tempObj in GameObject.FindGameObjectsWithTag("VRSocket"))
         {
             vrSockets.Add(tempObj);
         } 
+        
     }
     void Start()
     {
+        
+
+
         //Subscribe to BuildingManager event
         I_BuildingsManager.OnBuilding_placable += BuildingCanBePlaced;
     }
@@ -57,7 +61,23 @@ public class I_VrBelt : MonoBehaviour
     private void InstantateObjOnSocket()
     {
         //dependign on what int we have get differnt transform to Instantiate the obj
-        int i = BuildingNr.Value;
+        IXRSelectInteractable socketInfo;
+        
+        int i=0;          // spawn position on belt
+        bool freeSocket = false;
+        for(int loopCounter = 0 ; loopCounter < vrSockets.Count; loopCounter++)
+        {   
+            socketInfo = vrSockets[loopCounter].GetComponent<XRSocketInteractor>().GetOldestInteractableSelected();
+            if (socketInfo == null)
+            {   
+                Debug.Log("socketinfo "+ loopCounter);
+                i = loopCounter;
+                freeSocket = true;
+                break;
+            }
+            
+        }
+        if(!freeSocket) return;
 
         vrSockets[i].GetComponent<Transform>();
 
@@ -76,18 +96,17 @@ public class I_VrBelt : MonoBehaviour
        
         //PhotonNetwork.Instantiate(BuildingName, B_position, Quaternion.identity, 0);
         PhotonNetwork.Instantiate(BuildingToSpawn.name , B_position, Quaternion.identity, 0);
-        IsAllowedToSapwn = false;
+
+        BeltCounter.Value += 1;
+        //Debug.Log("BeltCounter: "+  BeltCounter.Value);
 
     }
 
     #region Events 
     private void BuildingCanBePlaced()
     {
-        if(IsAllowedToSapwn == true)
-        {
             InstantateObjOnSocket(); //get called to fotern right now
             //Debug.Log("Building waiting to be placed");
-        }
     }
 
     public void BuildWasPlaced()
