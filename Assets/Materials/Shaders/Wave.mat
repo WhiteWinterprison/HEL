@@ -58,9 +58,9 @@ Material:
     - _Hight: 4
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SpikeAmount: 1.42
+    - _SpikeAmount: 1.4
     m_Colors:
     - _Flutter: {r: 0.21, g: -0.35, b: 0, a: 0}
-    - _Texture_Offset: {r: 0.5, g: 0, b: 0, a: 0}
-    - _Texture_Tiling: {r: 0.2, g: 0.5, b: 0, a: 0}
+    - _Texture_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Texture_Tiling: {r: 0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
