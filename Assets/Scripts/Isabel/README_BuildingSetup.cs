@@ -22,7 +22,7 @@
 //     Teleporter.
 //     1. Make sure that on the teleporter there is the I_CollisioNWithSocket Script -> this will tell you what building is in the teleporter
 //         1.1 Make sure that the Collider is set to trigger !!
-//     2. !!!!Call the Funktion GetBuildingInforamtion into the Enter Hover event on the Telepoerte socket interactor
+//     2. !!!!Call the Funktion GetBuildingInforamtion into the Enter Hover event on the Telepoerte socket interactor!!!!!!!!!
 
 
 // The VR Belt:
