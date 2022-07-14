@@ -1290,54 +1290,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7041242851020876113}
     m_Modifications:
-    - target: {fileID: 1008811565220177942, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565220177942, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565220177942, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565220177942, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565220177944, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: near clip plane
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565220177944, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565553756083, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565553756083, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565553756083, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565553756083, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565553756085, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: near clip plane
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811565553756085, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1008811566030080382, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
       propertyPath: m_Name
       value: CAVECamera
@@ -1386,245 +1338,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1008811566089413051, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: near clip plane
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566089413051, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566278323432, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: near clip plane
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566278323432, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566582764851, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: near clip plane
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566582764851, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566582764852, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566582764852, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566582764852, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566582764852, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566664208934, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: near clip plane
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1008811566664208934, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923666214132250715, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923666214132250715, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923666214132250715, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046997055385587027, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+    - target: {fileID: 1530031155587535658, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: ProjectionScreen
       value: 
-      objectReference: {fileID: 2100000, guid: 044da62e932b7db4daf942dfe90a704c, type: 2}
-    - target: {fileID: 8950691249497921410, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      objectReference: {fileID: 7300365795173400685}
+    - target: {fileID: 1774682300561851194, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: ProjectionScreen
       value: 
-      objectReference: {fileID: 2100000, guid: 044da62e932b7db4daf942dfe90a704c, type: 2}
+      objectReference: {fileID: 7300365793316094841}
+    - target: {fileID: 2192470846889680204, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: ProjectionScreen
+      value: 
+      objectReference: {fileID: 7300365794942336754}
+    - target: {fileID: 2290930776597428009, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: ProjectionScreen
+      value: 
+      objectReference: {fileID: 7300365793400410510}
+    - target: {fileID: 2683392107242210175, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: ProjectionScreen
+      value: 
+      objectReference: {fileID: 7300365793229841321}
+    - target: {fileID: 3167956032208645937, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
+      propertyPath: ProjectionScreen
+      value: 
+      objectReference: {fileID: 7300365793207843945}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
---- !u!1 &1223131260364450797 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1008811565220177941, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-  m_PrefabInstance: {fileID: 2231933427726402552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2683392107242210175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131260364450797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b0e45fd151d4e48a316c54f0e05a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectionScreen: {fileID: 7300365793229841321}
-  ClampNearPlane: 0
-  DrawGizmos: 1
---- !u!1 &1223131260628798086 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1008811566030080382, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-  m_PrefabInstance: {fileID: 2231933427726402552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3132224101430289490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131260628798086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 6164538807208093690}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!114 &6164538807208093690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131260628798086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 0
 --- !u!4 &1223131260628798087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1008811566030080383, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
   m_PrefabInstance: {fileID: 2231933427726402552}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1223131260701959242 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1008811565553756082, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-  m_PrefabInstance: {fileID: 2231933427726402552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3167956032208645937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131260701959242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b0e45fd151d4e48a316c54f0e05a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectionScreen: {fileID: 7300365793207843945}
-  ClampNearPlane: 0
-  DrawGizmos: 1
---- !u!1 &1223131261150385865 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1008811566582764849, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-  m_PrefabInstance: {fileID: 2231933427726402552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2192470846889680204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131261150385865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b0e45fd151d4e48a316c54f0e05a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectionScreen: {fileID: 7300365794942336754}
-  ClampNearPlane: 0
-  DrawGizmos: 1
---- !u!1 &1223131261240042048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1008811566089413048, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-  m_PrefabInstance: {fileID: 2231933427726402552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1774682300561851194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131261240042048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b0e45fd151d4e48a316c54f0e05a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectionScreen: {fileID: 7300365793316094841}
-  ClampNearPlane: 0
-  DrawGizmos: 1
---- !u!1 &1223131261386682141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1008811566278323429, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-  m_PrefabInstance: {fileID: 2231933427726402552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1530031155587535658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131261386682141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b0e45fd151d4e48a316c54f0e05a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectionScreen: {fileID: 7300365795173400685}
-  ClampNearPlane: 0
-  DrawGizmos: 1
---- !u!1 &1223131261806088667 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1008811566664208931, guid: 10d90b3955c0d354398afa63d8492084, type: 3}
-  m_PrefabInstance: {fileID: 2231933427726402552}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2290930776597428009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223131261806088667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b0e45fd151d4e48a316c54f0e05a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectionScreen: {fileID: 7300365793400410510}
-  ClampNearPlane: 0
-  DrawGizmos: 1
 --- !u!1001 &3663283681713774985
 PrefabInstance:
   m_ObjectHideFlags: 0
