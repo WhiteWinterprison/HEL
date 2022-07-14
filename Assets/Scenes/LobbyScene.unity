@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0a3bdd0709d04b0438c832d0333150e2, type: 2}
     - target: {fileID: 1337411510828878124, guid: 7e76f6508a3ec614bae6d8c392154ee3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1337411510831131849, guid: 7e76f6508a3ec614bae6d8c392154ee3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -189,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 6201004860404007583, guid: 7e76f6508a3ec614bae6d8c392154ee3, type: 3}
       propertyPath: m_Name
       value: PlayArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201004860404007583, guid: 7e76f6508a3ec614bae6d8c392154ee3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e76f6508a3ec614bae6d8c392154ee3, type: 3}
