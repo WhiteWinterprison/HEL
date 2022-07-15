@@ -309,7 +309,7 @@ MonoBehaviour:
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
-  m_TranslateSpeed: 1
+  m_TranslateSpeed: 3
   m_AnchorRotateReferenceFrame: {fileID: 0}
 --- !u!120 &451728394343135830
 LineRenderer:
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
-  m_TranslateSpeed: 1
+  m_TranslateSpeed: 3
   m_AnchorRotateReferenceFrame: {fileID: 0}
 --- !u!120 &6171820912295615866
 LineRenderer:
