@@ -1,4 +1,8 @@
-﻿// source: https://github.com/aptas/off-axis-projection-unity
+﻿//Code based on https://csc.lsu.edu/~kooima/pdfs/gen-perspective.pdf
+//and https://forum.unity.com/threads/vr-cave-projection.76051/
+
+// source: https://github.com/aptas/off-axis-projection-unity
+
 //NOTE: Undefine this if you need to move the plane at runtime
 //#define PRECALC_PLANE
 
@@ -6,6 +10,9 @@
 // add this to each camera                      |
 // add respective plane to "projection screen"  |
 // - - - - - - - - - - - - - - - - - - - - - - -|
+
+// Creates together with "ProjectionPlane.cs" a working parallax effect for a CAVE setup 
+// Amount of cameras is highly adaptable. Important is to setup the same amount of Projectionplanes. 
 
 
 using System.Collections;
@@ -19,8 +26,6 @@ namespace Apt.Unity.Projection
     public class ProjectionPlaneCamera : MonoBehaviour
     {
 
-        //Code based on https://csc.lsu.edu/~kooima/pdfs/gen-perspective.pdf
-        //and https://forum.unity.com/threads/vr-cave-projection.76051/
 
         [Header("Projection plane")]
         public ProjectionPlane ProjectionScreen;
@@ -45,10 +50,11 @@ namespace Apt.Unity.Projection
         private void Awake()
         {
             cam = GetComponent<Camera>();
-
         }
 
-
+        // draws a green line to each corner of the projection plane
+        // draws a white line coming out of the camera to display a straight line of sight 
+        // important to adjust the camera properly by visualizing each line 
         private void OnDrawGizmos()
         {
             if (ProjectionScreen == null)

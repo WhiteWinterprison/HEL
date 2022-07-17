@@ -12,6 +12,8 @@
 // - provides the Callbacks for getting into a room
 // - provides the Callback for leaving the room
 
+//Component of a Singleton manager game object (Network Manager prefab) in Lobby scene
+
 
 using System.Collections;
 using System.Collections.Generic;

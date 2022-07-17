@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4699592035914510878}
   - component: {fileID: 5151848178449768684}
   - component: {fileID: 5285141169000442171}
+  - component: {fileID: 8481881489182521073}
+  - component: {fileID: 8046517874129778114}
   m_Layer: 0
   m_Name: Spawn (5)
   m_TagString: CaveSocket
@@ -97,6 +99,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.075, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8481881489182521073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502068897027280251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
+--- !u!114 &8046517874129778114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502068897027280251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 8481881489182521073}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2112964280290418546
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +149,8 @@ GameObject:
   - component: {fileID: 3759234097209390408}
   - component: {fileID: 1931459886088328044}
   - component: {fileID: 8001030966554703958}
+  - component: {fileID: 327875326812458260}
+  - component: {fileID: 5762029389513958857}
   m_Layer: 0
   m_Name: Spawn (4)
   m_TagString: CaveSocket
@@ -194,6 +237,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.075, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &327875326812458260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112964280290418546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
+--- !u!114 &5762029389513958857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112964280290418546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 327875326812458260}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &4627461195991816173
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +290,8 @@ GameObject:
   - component: {fileID: 4627461195991816160}
   - component: {fileID: 4627461195991816175}
   - component: {fileID: 5044803583838401422}
+  - component: {fileID: 7459945307928203378}
+  - component: {fileID: 4026266943825853996}
   m_Layer: 0
   m_Name: Teleport
   m_TagString: Building2
@@ -371,6 +455,45 @@ MonoBehaviour:
   InfoTxt: "This script can be used to detect what obj is colliding with the socket
     \n!!!!Pls Check the collider as a trigger !!!"
   BuildingName: 
+--- !u!114 &7459945307928203378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627461195991816173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
+--- !u!114 &4026266943825853996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627461195991816173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 7459945307928203378}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &9199917175455260584
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +505,8 @@ GameObject:
   - component: {fileID: 9199917175455260585}
   - component: {fileID: 9199917175455259734}
   - component: {fileID: 661586956393549322}
+  - component: {fileID: 4641777602417477217}
+  - component: {fileID: 6858485410305737782}
   m_Layer: 0
   m_Name: Spawn (1)
   m_TagString: CaveSocket
@@ -468,6 +593,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.075, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4641777602417477217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917175455260584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
+--- !u!114 &6858485410305737782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917175455260584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 4641777602417477217}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &9199917175900542539
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7cdfd31044c2a4ea462ad02dee7141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teleporterSocket: {fileID: 0}
   BuildingNr: {fileID: 11400000, guid: 89001213ad8cc4a45982795c64da9086, type: 2}
 --- !u!1 &9199917176169633938
 GameObject:
@@ -925,6 +1090,8 @@ GameObject:
   - component: {fileID: 9199917176375669449}
   - component: {fileID: 9199917176375669494}
   - component: {fileID: 2130297631424555196}
+  - component: {fileID: 9051460288753121457}
+  - component: {fileID: 3078444684909624564}
   m_Layer: 0
   m_Name: Spawn (3)
   m_TagString: CaveSocket
@@ -1011,6 +1178,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.075, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9051460288753121457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917176375669448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
+--- !u!114 &3078444684909624564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917176375669448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 9051460288753121457}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &9199917176883391072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1228,8 @@ GameObject:
   - component: {fileID: 9199917176883391073}
   - component: {fileID: 9199917176883391086}
   - component: {fileID: 8432154105054650060}
+  - component: {fileID: 2184931452462948771}
+  - component: {fileID: 3621358395033454226}
   m_Layer: 0
   m_Name: Spawn (2)
   m_TagString: CaveSocket
@@ -1108,3 +1316,42 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.075, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2184931452462948771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917176883391072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
+--- !u!114 &3621358395033454226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199917176883391072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 2184931452462948771}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

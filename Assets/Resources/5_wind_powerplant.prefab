@@ -250,7 +250,7 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
   - {fileID: 6982915769467265515}
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
-  m_UseLocal: 1
+  m_UseLocal: 0
 --- !u!114 &48083814911851236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
+  m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &5390148826818063265

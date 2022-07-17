@@ -89,6 +89,7 @@ namespace Apt.Unity.Projection
             }
         }
 
+        // creates 
         private GameObject CreateAlignmentQuad()
         {
             GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
@@ -140,7 +141,9 @@ namespace Apt.Unity.Projection
             }
 
 
-            //Do aspect ratio constraints
+            // locks on screen ratio (4:3, 16:9, etc) to make it more efficient to work with
+            // can be turned off when off-ration size is needed
+
             if(LockAspectRatio)
             {
                 if(AspectRatio.x != previousAspectRatio.x)

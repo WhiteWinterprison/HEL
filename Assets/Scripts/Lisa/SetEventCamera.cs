@@ -7,6 +7,9 @@
 //Script: Disabling the other users cameras to avoid rendering problems
 
 
+//Component of UI game object/prefab
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,12 +29,12 @@ public class SetEventCamera : MonoBehaviour
 
     public void SetCameraToEventCamera()
     {
-        //check first if there might be multiple UIs
+        //check first if there is the need to differenciate between multiple users
         if (PhotonNetwork.InRoom)
         {
             foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Panel")) //find all possible UIs
             {
-                if (obj.GetComponent<PhotonView>().IsMine) //find the one that belongs to this player
+                if (obj.GetComponent<PhotonView>().IsMine) //find the one that belongs to this user
                 {
                     //and set the camera
                     foreach (Canvas canvas in obj.GetComponentsInChildren<Canvas>())
